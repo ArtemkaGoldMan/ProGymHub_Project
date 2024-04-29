@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BaseLibrary_ProGymHub")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+015c1d2e96808c2c57023c6e7ee6f96ba866c632")]
 [assembly: System.Reflection.AssemblyProductAttribute("BaseLibrary_ProGymHub")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BaseLibrary_ProGymHub")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
