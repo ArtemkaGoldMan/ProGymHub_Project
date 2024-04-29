@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "QsgPjWTgW6RhRjAkizzrEm/giUZyzcOWceSknE/zg1qm24h0lF9E01fTElLPRak+uZNewvLC8cZTxHnfQyCUsg==",
+  "dgSpecHash": "ZVkxEIn4SaRBjplq/g/MWBnK4TiCsBT8DTUKoHtt5HlCz6SHC1M5o2Wuz1XHpLxgcTwllQZvG1PGrh64xc0fWQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

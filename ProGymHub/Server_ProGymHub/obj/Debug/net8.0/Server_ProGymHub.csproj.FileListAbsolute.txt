@@ -30,3 +30,8 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\obj\Debug\net8.0\Server_ProGymHub.pdb
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\obj\Debug\net8.0\Server_ProGymHub.genruntimeconfig.cache
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\obj\Debug\net8.0\ref\Server_ProGymHub.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\bin\Debug\net8.0\BaseLibrary_ProGymHub.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\bin\Debug\net8.0\ServerLibrary.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\bin\Debug\net8.0\BaseLibrary_ProGymHub.pdb
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\bin\Debug\net8.0\ServerLibrary.pdb
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\Server_ProGymHub\obj\Debug\net8.0\Server_ProGymHub.sourcelink.json
