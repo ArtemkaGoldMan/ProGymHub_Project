@@ -1,0 +1,6 @@
+@Server_ProGymHub_HostAddress = http://localhost:5273
+
+GET {{Server_ProGymHub_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
