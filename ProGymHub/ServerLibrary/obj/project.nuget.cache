@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "vT8uVNwIb1+FHvcK7ID/R1TYg90InqjQPLrWjNq/xjKLrKXRC4jFz+7QT8MHit1t/p1UER/FfENuyBmqZQBS5w==",
+  "dgSpecHash": "+15yDl9e5DFYy8bKVzJ+Ww16EKYY4F8gx803rQWvdcv0htf7b59P3tmIuErEQWnpD6vpnTjjWsXz0o5ec38EPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\ServerLibrary\\ServerLibrary.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\ServerLibrary.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\artem\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

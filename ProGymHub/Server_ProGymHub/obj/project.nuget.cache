@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JNBk2xvcE4sSSpcDMBjAU1TYlBCQQFH0CUJB2zZunY2H9qeqWiK8giCAeh8DqsyJ9Bgcep3lOUfF6G/TU16tpQ==",
+  "dgSpecHash": "3NsAv/p+TDkmQ6rjFohPoWZkAUS5dEeK5rCEzKv7iQB6UjqDKtolO8WDM1U4gicHSzp5Rsofikuo6mqDMhk4Cw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\Server_ProGymHub\\Server_ProGymHub.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server_ProGymHub\\Server_ProGymHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
