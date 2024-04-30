@@ -24,8 +24,4 @@
     <Folder Include="Repositories\Implementations\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BaseLibrary_ProGymHub\BaseLibrary.csproj" />
-  </ItemGroup>
-
 </Project>

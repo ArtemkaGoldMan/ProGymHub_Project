@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BaseLibrary_ProGymHub\BaseLibrary.csproj" />
+    <ProjectReference Include="..\BaseLibrary_ProGymHub\BaseLibrary_ProGymHub.csproj" />
     <ProjectReference Include="..\ClientLibrary\ClientLibrary.csproj" />
   </ItemGroup>
 

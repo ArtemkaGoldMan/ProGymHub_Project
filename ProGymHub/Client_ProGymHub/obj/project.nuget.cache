@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bz73Lp3u6AdQJnWVjW+Lb5d/LNLHvLemz4g13emEpye9NyBD6Bl+uCTIqSDA19hwIqjkZOOjw3JS3zoY4N0ong==",
+  "dgSpecHash": "kaFc9T15JWJhIKza5HxT2FiqtRBY8m6ybLJihXzD8lsjnxcU1/T7kA5NoC/2vb9f2NTez5i4LR6+4DlBSJ72Zg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\Client_ProGymHub\\Client.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\Client_ProGymHub\\Client_ProGymHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.4\\microsoft.aspnetcore.authorization.8.0.4.nupkg.sha512",
