@@ -213,9 +213,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj",
-      "projectName": "BaseLibrary",
-      "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj",
+      "projectUniqueName": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
+      "projectName": "BaseLibrary_ProGymHub",
+      "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
       "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\obj\\",
       "projectStyle": "PackageReference",
