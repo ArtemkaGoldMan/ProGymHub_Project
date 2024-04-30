@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ServerLibrary
-build_property.ProjectDir = C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\ServerLibrary\
+build_property.ProjectDir = C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ServerLibrary\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

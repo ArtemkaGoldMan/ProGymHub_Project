@@ -10,3 +10,16 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\refint\BaseLibrary_ProGymHub.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.pdb
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WevAssembly project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\ref\BaseLibrary_ProGymHub.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\bin\Debug\net8.0\BaseLibrary_ProGymHub.deps.json
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\bin\Debug\net8.0\BaseLibrary_ProGymHub.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\bin\Debug\net8.0\BaseLibrary_ProGymHub.pdb
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.AssemblyInfoInputs.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.AssemblyInfo.cs
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.csproj.CoreCompileInputs.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.sourcelink.json
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\refint\BaseLibrary_ProGymHub.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\BaseLibrary_ProGymHub.pdb
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\BaseLibrary_ProGymHub\obj\Debug\net8.0\ref\BaseLibrary_ProGymHub.dll

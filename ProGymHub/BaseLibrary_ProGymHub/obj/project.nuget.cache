@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZVkxEIn4SaRBjplq/g/MWBnK4TiCsBT8DTUKoHtt5HlCz6SHC1M5o2Wuz1XHpLxgcTwllQZvG1PGrh64xc0fWQ==",
+  "dgSpecHash": "vS5mmwFuNcJyn8V0fX7xbEUW9rIV7/HTtCGwHSt2TqGLfwPhbWtnZ2uMAkEYJpQEgLHDfCRRfRLfbjzq7bMxYg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\artem\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kkqNa/pEMJLz0TQnkHjd+w/kmhI//boiJ2oU8e43lLLio5/se7SFTBMayTNyDuqWJ0BKhzRUN1ABW0uLSlpqQg==",
+  "dgSpecHash": "aZp9RtI6fk2ucisgGIwF6mbZ2R6NkjopH3gtepuMm0pkZWOCY5VkW1V8WhlIeVQY0yAn9K/5OEqbTt1S1MH8SA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\ClientLibrary\\ClientLibrary.csproj",
+  "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ClientLibrary\\ClientLibrary.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

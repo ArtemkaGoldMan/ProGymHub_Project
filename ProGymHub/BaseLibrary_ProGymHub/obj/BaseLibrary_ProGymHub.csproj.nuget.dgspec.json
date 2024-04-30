@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj": {}
+    "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj": {
+    "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
         "projectName": "BaseLibrary_ProGymHub",
-        "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
+        "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\obj\\",
+        "outputPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary_ProGymHub\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
