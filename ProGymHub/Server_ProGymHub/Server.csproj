@@ -24,7 +24,7 @@
 	</ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BaseLibrary_ProGymHub\BaseLibrary_ProGymHub.csproj" />
+    <ProjectReference Include="..\BaseLibrary_ProGymHub\BaseLibrary.csproj" />
     <ProjectReference Include="..\ServerLibrary\ServerLibrary.csproj" />
   </ItemGroup>
 
