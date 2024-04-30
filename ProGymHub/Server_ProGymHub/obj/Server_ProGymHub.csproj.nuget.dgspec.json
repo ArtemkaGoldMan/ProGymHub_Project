@@ -4,12 +4,12 @@
     "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\Server_ProGymHub\\Server_ProGymHub.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj": {
+    "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
-        "projectName": "BaseLibrary_ProGymHub",
-        "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj",
+        "projectUniqueName": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj",
+        "projectName": "BaseLibrary",
+        "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj",
         "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\obj\\",
         "projectStyle": "PackageReference",
@@ -198,8 +198,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj": {
-                "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary_ProGymHub.csproj"
+              "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj": {
+                "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\BaseLibrary_ProGymHub\\BaseLibrary.csproj"
               },
               "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\ServerLibrary\\ServerLibrary.csproj": {
                 "projectPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WevAssembly project\\ProGymHub\\ServerLibrary\\ServerLibrary.csproj"
