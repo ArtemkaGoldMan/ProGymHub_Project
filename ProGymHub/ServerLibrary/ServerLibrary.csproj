@@ -20,13 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
-
     <Folder Include="Repositories\Contracts\" />
-    <Folder Include="Repositories\Implementations\" />
+    <Folder Include="Repositories\Implementation\" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BaseLibrary_ProGymHub\BaseLibrary_ProGymHub.csproj" />
+    <ProjectReference Include="..\BaseLibrary\BaseLibrary.csproj" />
   </ItemGroup>
 
 </Project>
