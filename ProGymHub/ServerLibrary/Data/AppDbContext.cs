@@ -17,5 +17,8 @@ namespace ServerLibrary.Data
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<SystemRole> SystemRoles { get; set; }
+        public DbSet<UserRole> UserRoles { get; set; }
+
     }
 }
