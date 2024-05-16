@@ -10,3 +10,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\obj\Debug\net8.0\refint\ClientLibrary.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\obj\Debug\net8.0\ClientLibrary.pdb
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\obj\Debug\net8.0\ref\ClientLibrary.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\bin\Debug\net8.0\BaseLibrary.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\bin\Debug\net8.0\BaseLibrary.pdb
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\obj\Debug\net8.0\ClientLibrary.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\ClientLibrary\obj\Debug\net8.0\ClientLi.3D08BA28.Up2Date
