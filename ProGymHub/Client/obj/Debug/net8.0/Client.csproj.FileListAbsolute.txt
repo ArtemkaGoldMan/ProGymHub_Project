@@ -1108,3 +1108,8 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\uuioa37jkv.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\p3we6vswwg.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\t96il0074u.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Web.Cors.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Web.Cors.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\System.Web.Cors.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\veyzc4h4sg.gz

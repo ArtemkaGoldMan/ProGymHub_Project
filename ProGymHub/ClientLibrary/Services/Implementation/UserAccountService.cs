@@ -6,7 +6,7 @@ using System.Net.Http.Json;
 
 namespace ClientLibrary.Services.Implementation
 {
-    public class UserAccountSevice(GetHttpClient getHttpClient) : IUserAccountService
+    public class UserAccountService(GetHttpClient getHttpClient) : IUserAccountService
     {
         public const string AuthUrl = "api/authentication";
         public async Task<GeneralResponse> CreateAsync(Register user)
@@ -36,7 +36,7 @@ namespace ClientLibrary.Services.Implementation
         public async Task<WeatherForecast[]> GetWeatherForecats()
         {
             var httpClient = await getHttpClient.GetPrivateHttpClient();
-            var result = await httpClient.GetFromJsonAsync < WeatherForecast[]>("api/weatherForecast");
+            var result = await httpClient.GetFromJsonAsync < WeatherForecast[]>("api/weatherforecast");
             return result!;
         }
     }

@@ -63,7 +63,7 @@ namespace ClientLibrary.Helpers
             var name = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Name);
             var email = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Email);
             var role = token.Claims.FirstOrDefault(_ => _.Type == ClaimTypes.Role);
-            return new CustomUserClaims(userId!.Value!, name!.Value!, email!.Value!, role!.Value!);
+            return new CustomUserClaims(userId!.Value!, name!.Value, email!.Value, role!.Value);
         }
     }
 }

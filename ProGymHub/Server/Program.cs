@@ -2,9 +2,10 @@ using Microsoft.EntityFrameworkCore;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
 using ServerLibrary.Repositories.Contracts;
-using ServerLibrary.Repositories;
 using ServerLibrary.Repositories.Implementations;
-using System.Runtime;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,26 +16,48 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
+var jwtSection = builder.Configuration.GetSection(nameof(JwtSection)).Get<JwtSection>();
+
 //starting
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer("Server=ARTEM_LAPTOP\\SQLEXPRESS;Database=ProGymHubDB;Trusted_Connection=True;TrustServerCertificate=True;");
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection") ??
+        throw new InvalidOperationException("Sorry, your connection is not found"));
 });
 
-builder.Services.Configure<JwtSection>(builder.Configuration.GetSection("JwtSection"));
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateIssuerSigningKey = true,
+        ValidateLifetime = true,
+        ValidIssuer = jwtSection!.Issuer,
+        ValidAudience = jwtSection.Audience,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSection.Key!))
+    };
+});
+
+
 builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
 
 //add cors
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowBlazorWasm",
-        builder => builder
-        .AllowAnyMethod()
-        .AllowCredentials()
-        .SetIsOriginAllowed((host) => true )
+        policy => policy
         //.WithOrigins("http://localhost:5020", "https://localhost:7166")
-        .AllowAnyHeader());
+        .SetIsOriginAllowed((host) => true)
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials());
 });
 
 var app = builder.Build();
@@ -46,8 +69,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseCors("AllowBlazorWasm");
 app.UseHttpsRedirection();
+app.UseCors("AllowBlazorWasm");
+
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
