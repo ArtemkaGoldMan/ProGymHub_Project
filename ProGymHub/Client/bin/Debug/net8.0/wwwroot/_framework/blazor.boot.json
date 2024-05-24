@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Client",
   "resources": {
-    "hash": "sha256-UlDCzFksPiq3IccF32Z3qZ1hfCsBIbGcNwmQ3wPbeYw=",
+    "hash": "sha256-jgRXwn6GkRy7YrCRBBfnfL2jiIEpC6JKwBAFHYMg2UE=",
     "jsModuleNative": {
       "dotnet.native.8.0.4.o3m6nyetke.js": "sha256-ju0+XWE0ihz554eKEj0HQ8Opa61xpbUIaX5/MNo8we4="
     },
@@ -19,7 +19,6 @@
     "assembly": {
       "AutoMapper.wasm": "sha256-pQ4Xf706xSWYtP4HFejje/2xeMx82yLD1hKlKL3JR1I=",
       "Blazored.LocalStorage.wasm": "sha256-OaMAAd5n7ORfyur5e3QIyEVKJ76MKIvwbg7/icnnYcU=",
-      "System.Web.Cors.wasm": "sha256-TPZovhnQnnLfLM9l2sG+Sv5lPE07cZj3KYoW8r6Pc4I=",
       "Microsoft.AspNetCore.Authorization.wasm": "sha256-OLGFBcpljsXLhIaQF0m6arMwqtgxgm6RbZTaO8tfkRU=",
       "Microsoft.AspNetCore.Components.wasm": "sha256-+8HtAi0ng5YbjkbeE5qEZU5ga1uH7+yDBrpxerkI1G4=",
       "Microsoft.AspNetCore.Components.Authorization.wasm": "sha256-QPNGNiJPxjhjFbr37cU6MY7SYajEmD4ZFEzB36TgwOM=",
@@ -45,13 +44,13 @@
       "Microsoft.Extensions.Options.wasm": "sha256-5/m+yVFGRuY+N4jQnD+QETKH0AfhAsnVze5dJ5ogIVM=",
       "Microsoft.Extensions.Options.ConfigurationExtensions.wasm": "sha256-C8ZA1VhhrMRPf8Qqv+OrW9za3ggJkCM9i1d8R/F1ETc=",
       "Microsoft.Extensions.Primitives.wasm": "sha256-pVrYOTfjb2ITls3LKIByW1t8jwOAWFhmkIVDewtJ1GE=",
-      "Microsoft.IdentityModel.Abstractions.wasm": "sha256-r30Ky+kD+BZxaTAr8P7/M02xkxtvL1VfBlH9T38ATAs=",
-      "Microsoft.IdentityModel.JsonWebTokens.wasm": "sha256-s4PcUGVsWd3RawK+erm+TTtlaW7lKCGUikybScse+Fs=",
-      "Microsoft.IdentityModel.Logging.wasm": "sha256-bk17ZiVjOp+pT6v/BFZNCIl+pGqg//GEggIebJN4x2A=",
-      "Microsoft.IdentityModel.Tokens.wasm": "sha256-007xuDnm4v+hMpJrxaWzOijbGgrD3RuurnF/l4ibZEQ=",
+      "Microsoft.IdentityModel.Abstractions.wasm": "sha256-f1dc8In5c/sMzo3lGkrNuDLc7OQ+Kk0BtIR+5TfEjxc=",
+      "Microsoft.IdentityModel.JsonWebTokens.wasm": "sha256-c2Rlnj8MNXyT9555kgvIOKPuWlrtTci2ql9c66RdEU0=",
+      "Microsoft.IdentityModel.Logging.wasm": "sha256-Xx6etm4yNmGWTVfPxf5Gu4BPK0r0ejxgIlSP3ehXuAw=",
+      "Microsoft.IdentityModel.Tokens.wasm": "sha256-1m6ogGmMJat5prWzUIZ1cx0r/tOVhHFDhb5CY9hneus=",
       "Microsoft.JSInterop.wasm": "sha256-GsAOzdCVCC+n7tPF4K83ctQiqj1M850bsiJ5oPCpOiE=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-k1ycznAW3kfyxO+I3lroU5VWTHPfMEmvwPqq6dnWPtk=",
-      "System.IdentityModel.Tokens.Jwt.wasm": "sha256-PO+x96C/PkZ0SBbU+a9mIaUKvAK79n200oqZ/t+TxrE=",
+      "System.IdentityModel.Tokens.Jwt.wasm": "sha256-ZS/79c36xKj4LxGx5WU3mVnYCPzfLbJkX99crxY2+TQ=",
       "System.IO.Pipelines.wasm": "sha256-JqVBy6SV+3qk+IK3VJiyIDt9CsVk6b1/ytTXmrI4mTM=",
       "Microsoft.CSharp.wasm": "sha256-QZ+XNH5nEsUeYa9owq17t0oiJ5OcWkIe6xmu1ro91bI=",
       "Microsoft.VisualBasic.Core.wasm": "sha256-UOAvLLXjmwn59rkItc52d8N/uOO/+VkexM1gKlDr4Js=",
@@ -221,14 +220,14 @@
       "mscorlib.wasm": "sha256-VCfYgt1mcjITabSTosCDVZ+68ea3Z7kakTFaLNLG+18=",
       "netstandard.wasm": "sha256-YOZxxR9PM3Dltcijfb0Q4FD39DkWZbZ1e2ScbZDvWJ4=",
       "System.Private.CoreLib.wasm": "sha256-NrT1QkAzVU//2wgK9vXdq77lCGvLJ4IOZ+Aegesyanc=",
-      "BaseLibrary.wasm": "sha256-nPdNksY69/9pu1nf+Pqs/B7cqNBOSCwsWjS5sGSZKGg=",
-      "ClientLibrary.wasm": "sha256-IDZkkMHue3/3JkxWSlbkl5ky7ihuoIxga8TuuJdwXx4=",
-      "Client.wasm": "sha256-uFOoNT3s1c7szVR0AWShJ6PBKE1DTC9N/F2gginyrd0="
+      "BaseLibrary.wasm": "sha256-Lqwjpy4oe8ceoE48TcbSy7gMo5PimKqdCFTeOsDBiRw=",
+      "ClientLibrary.wasm": "sha256-RXzVoC+FE/QuBX0z1buTAjUvc4w8vSiLcwLJwx+tWmc=",
+      "Client.wasm": "sha256-8ZQKrIwx2ye3uhoQLcry5TperRWDLZsSUzdulP2QZYg="
     },
     "pdb": {
-      "BaseLibrary.pdb": "sha256-+Y9iOAoWe9+adkuRrE98p8v5Cc7+/vta7glWicsP5XI=",
-      "ClientLibrary.pdb": "sha256-41/HcrZQyYhX0jJqRv8c6+esO+XE1uO9/haY2k5UovU=",
-      "Client.pdb": "sha256-ADhb9VguC8LMUdHCFWuanVLi2Ct1HZvuZXJDTB58SpE="
+      "BaseLibrary.pdb": "sha256-jBh9gsCl7KUPhapFaKaIfSUe0lWDdrgdBg33D6v9p7M=",
+      "ClientLibrary.pdb": "sha256-g56JUKh2Zq1K2DeRzhrpnxaMndH/wzbPj7tfOxPfLU4=",
+      "Client.pdb": "sha256-63MP52WSIK9uXQKjRw/8pi4ND7cwLhWwYdj8b4gPWFQ="
     }
   },
   "cacheBootResources": true,

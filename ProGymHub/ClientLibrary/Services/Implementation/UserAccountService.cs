@@ -1,4 +1,5 @@
 ﻿using BaseLibrary.DTOs;
+using BaseLibrary.Entities;
 using BaseLibrary.Responses;
 using ClientLibrary.Helpers;
 using ClientLibrary.Services.Contracts;
@@ -28,9 +29,13 @@ namespace ClientLibrary.Services.Implementation
             return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
         }
 
-        public Task<LoginResponse> RefreshTokenAsync(RefreshToken token)
+        public async Task<LoginResponse> RefreshTokenAsync(RefreshToken token)
         {
-            throw new NotImplementedException();
+            var httpClient = getHttpClient.GetPublicHttpClient();
+            var result = await httpClient.PostAsJsonAsync($"{AuthUrl}/refresh-token", token);
+            if (!result.IsSuccessStatusCode) return new LoginResponse(false, "Error occured");
+
+            return await result.Content.ReadFromJsonAsync<LoginResponse>()!;
         }
 
         public async Task<WeatherForecast[]> GetWeatherForecats()

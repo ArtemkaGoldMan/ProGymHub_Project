@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rhHdT6sO8ZVQg6EW98T+BW1PRD1MkoRviKOLa7K/TxA=",
+  "Hash": "6tinrfM+amwsllJo+vFkKd5yrH/D+wpIZsKrPzzWYAE=",
   "Source": "Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -3950,25 +3950,6 @@
       "OriginalItemSpec": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\obj\\Debug\\net8.0\\webcil\\System.wasm"
     },
     {
-      "Identity": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Web.Cors.wasm",
-      "SourceId": "Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Web.Cors.wasm",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "WasmResource",
-      "AssetTraitValue": "runtime",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\obj\\Debug\\net8.0\\webcil\\System.Web.Cors.wasm"
-    },
-    {
       "Identity": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Web.HttpUtility.wasm",
       "SourceId": "Client",
       "SourceType": "Computed",
@@ -7729,25 +7710,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Diagnostics.Debug.wasm"
-    },
-    {
-      "Identity": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\obj\\Debug\\net8.0\\compressed\\veyzc4h4sg.gz",
-      "SourceId": "Client",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.Web.Cors.wasm.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Web.Cors.wasm",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Web.Cors.wasm"
     },
     {
       "Identity": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\obj\\Debug\\net8.0\\compressed\\vl1pns4uhk.gz",
