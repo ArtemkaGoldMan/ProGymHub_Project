@@ -1,10 +1,3 @@
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.csproj.AssemblyReference.cache
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.AssemblyInfoInputs.cache
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.AssemblyInfo.cs
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.csproj.CoreCompileInputs.cache
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.sourcelink.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\bin\Debug\net8.0\appsettings.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\bin\Debug\net8.0\Server.exe
@@ -130,7 +123,14 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\bin\Debug\net8.0\ServerLibrary.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\bin\Debug\net8.0\BaseLibrary.pdb
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\bin\Debug\net8.0\ServerLibrary.pdb
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.csproj.AssemblyReference.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.AssemblyInfoInputs.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.AssemblyInfo.cs
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.csproj.CoreCompileInputs.cache
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\Server.sourcelink.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Server\obj\Debug\net8.0\staticwebassets\msbuild.Server.Microsoft.AspNetCore.StaticWebAssets.props

@@ -13,7 +13,7 @@ using System.Security.AccessControl;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using Constants = ServerLibrary.Helpers.Constants;
+using Constants = ServerLibrary.Helpers.Constants; 
 
 namespace ServerLibrary.Repositories.Implementations
 {
@@ -106,7 +106,7 @@ namespace ServerLibrary.Repositories.Implementations
                 issuer: config.Value.Issuer,
                 audience: config.Value.Audience,
                 claims: userClaims,
-                expires: DateTime.Now.AddDays(1),
+                expires: DateTime.Now.AddSeconds(2),
                 signingCredentials: credentials
                 );
             return new JwtSecurityTokenHandler().WriteToken(token);
