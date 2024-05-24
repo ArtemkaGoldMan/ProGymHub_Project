@@ -1,12 +1,12 @@
 ﻿@page "/identity/account/register"
+@layout AuthenticationLayout
 <div class="container">
-    <div class="row">
-        <div class="col-lg-6">
-            <EditForm Enhance Model="User" OnValidSubmit="HandleRegistration"> <!--2.51.19 Why it do not wokr>?>?>?>?>?>?>?-->
+    <div class="row justify-content-center">
+        <div class="col-lg-4">
+            <EditForm Model="@User" OnValidSubmit="@HandleRegistration">
                 <DataAnnotationsValidator />
-                <ValidationSummary />
-                <div class="card">
-                    <div class="card-header">Fill this form to Register</div>
+                <div class="card bg-dark text-white" style="opacity: 0.85; margin-top: 20%; border-radius: 10px;">
+                    <div class="card-header text-center fs-5">Register</div>
                     <div class="card-body">
                         <div class="form-group">
                             <label class="form-label">Fullname</label>
@@ -18,16 +18,21 @@
                         </div>
                         <div class="form-group mt-3">
                             <label class="form-label">Password</label>
-                            <input type="password" @bind="User.Password" class="form-control" />
+                            <InputText @bind-Value="User.Password" type="password" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
                             <label class="form-label">Confirm password</label>
-                            <input type="password" @bind="User.ConfirmPassword" class="form-control" />
+                            <InputText @bind-Value="User.ConfirmPassword" type="password" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
                             <button class="btn btn-outline-primary float-end" type="submit">Register</button>
                         </div>
                     </div>
+                    <div class="card-footer text-center">
+                        Have an account already?
+                        <a class="btn-link" href="/identity/account/login">Sign In</a>
+                    </div>
+                    <ValidationSummary />
                 </div>
             </EditForm>
         </div>
