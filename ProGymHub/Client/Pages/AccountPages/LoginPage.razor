@@ -1,5 +1,9 @@
 ﻿@page "/identity/account/login"
+@using Client.Pages.OtherPages
+@using Syncfusion.Blazor.Popups
 @layout AuthenticationLayout
+@inject SfDialogService DialogService
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-4">
@@ -17,7 +21,14 @@
                             <InputText @bind-Value="User.Password" type="password" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
-                            <button class="btn btn-outline-primary float-end" type="submit">Login</button>
+                            @if (ShowLoadingButton)
+                            {
+                                <ButtonLoadingSpinner></ButtonLoadingSpinner>
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary float-end" type="submit">Login</button>
+                            }
                         </div>
                     </div>
                     <div class="card-footer text-center">
@@ -32,17 +43,50 @@
 </div>
 
 @code {
+    public bool ShowLoadingButton { get; set; } = false;
     Login User = new();
+
+    [CascadingParameter] public Task<AuthenticationState>? AuthenticationState { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await CheckUserAuthentication();
+    }
+
     async Task HandleLogin()
     {
+        ShowLoadingButton = true;
+
         var result = await accountSevice.SignInAsync(User);
         if (result.Flag)
         {
+            await DisplayDialog(result.Message, "Login Success");
             var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
-            await customAuthStateProvider.UpdateAuthenticationState(new UserSession() 
-            { Token = result.Token, RefreshToken = result.RefreshToken });
+            await customAuthStateProvider.UpdateAuthenticationState(new UserSession()
+                { Token = result.Token, RefreshToken = result.RefreshToken });
             NavManager.NavigateTo("/", forceLoad: true);
         }
+        else
+        {
+            await DisplayDialog(result.Message, "Alert");
+        }
 
+        ShowLoadingButton = false;
+    }
+
+    private async Task DisplayDialog(string content, string title)
+    {
+        await DialogService.AlertAsync(content, title);
+    }
+
+    private async Task CheckUserAuthentication()
+    {
+        if (AuthenticationState != null)
+        {
+            var user = (await AuthenticationState).User;
+            bool isUserAuthenticated = user.Identity?.IsAuthenticated ?? false;
+            if (isUserAuthenticated)
+                NavManager.NavigateTo("/home/dashboard");
+        }
     }
 }

@@ -1,5 +1,9 @@
 ﻿@page "/identity/account/register"
+@using Client.Pages.OtherPages
+@using Syncfusion.Blazor.Popups
 @layout AuthenticationLayout
+@inject SfDialogService DialogService
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-4">
@@ -25,7 +29,14 @@
                             <InputText @bind-Value="User.ConfirmPassword" type="password" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
-                            <button class="btn btn-outline-primary float-end" type="submit">Register</button>
+                            @if (ShowLoadingButton)
+                            {
+                                <ButtonLoadingSpinner></ButtonLoadingSpinner>
+                            }
+                            else
+                            {
+                                <button class="btn btn-primary float-end" type="submit">Register</button>
+                            }
                         </div>
                     </div>
                     <div class="card-footer text-center">
@@ -38,19 +49,49 @@
         </div>
     </div>
 </div>
+
 @code {
+    public bool ShowLoadingButton { get; set; } = false;
     Register User = new();
+
+    [CascadingParameter] public Task<AuthenticationState>? AuthenticationState { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await CheckUserAuthentication();
+    }
 
     async Task HandleRegistration()
     {
+        ShowLoadingButton = true;
+
         var result = await accountSevice.CreateAsync(User);
         if (result.Flag)
         {
+            await DisplayDialog(result.Message, "Register Success");
             User = new();
         }
         else
         {
+            await DisplayDialog(result.Message, "Alert!");
+        }
 
+        ShowLoadingButton = false;
+    }
+
+    private async Task DisplayDialog(string content, string title)
+    {
+        await DialogService.AlertAsync(content, title);
+    }
+
+    private async Task CheckUserAuthentication()
+    {
+        if (AuthenticationState != null)
+        {
+            var user = (await AuthenticationState).User;
+            bool isUserAuthenticated = user.Identity?.IsAuthenticated ?? false;
+            if (isUserAuthenticated)
+                NavManager.NavigateTo("/home/dashboard");
         }
     }
 }
