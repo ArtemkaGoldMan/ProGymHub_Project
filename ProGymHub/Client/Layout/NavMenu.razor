@@ -1,10 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
+
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">
             Hi,
             <AuthorizeView>
-                <Authorized>@context.User.Identity!.Name</Authorized> <!-- Part to display name of user in left upper corner -->
+                <Authorized>@context.User.Identity!.Name</Authorized>
                 <NotAuthorized>Guest</NotAuthorized>
             </AuthorizeView>
         </a>
@@ -14,7 +15,7 @@
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+<div class="nav-scrollable @(collapseNavMenu ? "collapse" : "show")">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
