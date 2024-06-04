@@ -38,12 +38,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXFJlZ2lzdGVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/AdministrationPages/TableBanner.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpb25QYWdlc1xUYWJsZUJhbm5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/AuthenticationPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/AboutPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEFib3V0UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/AccountPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEFjY291bnRQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEhvbWVQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/SchedulePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXFNjaGVkdWxlUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/UsersPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXFVzZXJzUGFnZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/Counter.razor]
