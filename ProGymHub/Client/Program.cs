@@ -19,7 +19,7 @@ builder.Services.AddTransient<CustomHttpHandler>();
 // Configure HttpClient with a custom handler
 builder.Services.AddHttpClient("SystemApiClient", client =>
 {
-    client.BaseAddress = new Uri("https://localhost:7166/");
+    client.BaseAddress = new Uri("https://localhost:7166");
 }).AddHttpMessageHandler<CustomHttpHandler>();
 
 // Register authorization and local storage services

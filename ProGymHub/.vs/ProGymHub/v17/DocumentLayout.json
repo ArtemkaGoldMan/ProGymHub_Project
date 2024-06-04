@@ -1,88 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|solutionrelative:client\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|solutionrelative:client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|solutionrelative:client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\pages\\contentpages\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0A98FB27-CFFD-4B14-9908-11C7E642B8E9}|Client\\Client.csproj|solutionrelative:client\\pages\\contentpages\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 187,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "Client\\wwwroot\\index.html",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\index.html",
-              "RelativeToolTip": "Client\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-06-03T16:46:01.52Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NavMenu.razor",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\NavMenu.razor",
-              "RelativeDocumentMoniker": "Client\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\NavMenu.razor",
-              "RelativeToolTip": "Client\\Layout\\NavMenu.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T16:09:55.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainLayout.razor",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\MainLayout.razor",
-              "RelativeDocumentMoniker": "Client\\Layout\\MainLayout.razor",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\MainLayout.razor",
-              "RelativeToolTip": "Client\\Layout\\MainLayout.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T16:09:18.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomePage.razor",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\ContentPages\\HomePage.razor",
-              "RelativeDocumentMoniker": "Client\\Pages\\ContentPages\\HomePage.razor",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\ContentPages\\HomePage.razor",
-              "RelativeToolTip": "Client\\Pages\\ContentPages\\HomePage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-03T16:07:58.688Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
