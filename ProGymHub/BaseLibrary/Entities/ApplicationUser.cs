@@ -13,5 +13,8 @@ namespace BaseLibrary.Entities
         public string? Email { get; set; }
         public string? Passsword { get; set; }
 
+        // Navigation property
+        public ICollection<UserLesson>? UserLessons { get; set; }
+
     }
 }

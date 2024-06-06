@@ -46,6 +46,7 @@ builder.Services.AddAuthentication(options =>
 
 // Configure Scoped Services
 builder.Services.AddScoped<IUserAccount, UserAccountRepository>();
+builder.Services.AddScoped<ILessonRepository, LessonRepository>();
 
 // Configure CORS
 builder.Services.AddCors(options =>
