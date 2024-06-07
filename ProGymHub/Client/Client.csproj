@@ -23,4 +23,8 @@
     <ProjectReference Include="..\ClientLibrary\ClientLibrary.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\lesssonsPictures\" />
+  </ItemGroup>
+
 </Project>

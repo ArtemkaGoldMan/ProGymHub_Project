@@ -1,29 +1,204 @@
-﻿@page "/lessons"
+﻿@page "/ulesson"
 @using BaseLibrary.DTOs
+@using BaseLibrary.Responses
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
 @inject IHttpClientFactory HttpClientFactory
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthenticationStateProvider
 
-<h3>Lesson List</h3>
+<div class="container">
+    <h3 class="text-center my-4">Lesson List</h3>
 
-@if (lessons == null)
-{
-    <p><em>Loading...</em></p>
-}
-else
-{
-    <ul>
-        @foreach (var lesson in lessons)
-        {
-            <li>@lesson.Name - @lesson.Date.ToString("yyyy-MM-dd")</li>
-        }
-    </ul>
-}
+    <div class="d-flex justify-content-center mb-3">
+        <button class="btn btn-primary me-2" @onclick="LoadAllLessons">All Lessons</button>
+        <button class="btn btn-secondary" @onclick="LoadUserLessons">My Lessons</button>
+    </div>
+
+    @if (lessons == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else if (!lessons.Any())
+    {
+        <p>No lessons available.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var lesson in lessons)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@GetImageUrl(lesson.ImageUrl)" class="card-img-top" alt="@lesson.Name" />
+                        <div class="card-body">
+                            <h5 class="card-title">@lesson.Name</h5>
+                            <p class="card-text">@lesson.Description.Substring(0, Math.Min(lesson.Description.Length, 100))...</p>
+                            <p class="card-text"><small class="text-muted">@lesson.Date.ToString("yyyy-MM-dd")</small></p>
+
+                            @if (userLessonIds.Contains(lesson.Id))
+                            {
+                                <button class="btn btn-warning" @onclick="() => CancelEnrollment(lesson.Id)">Cancel</button>
+                            }
+                            else
+                            {
+                                <button class="btn btn-success" @onclick="() => EnrollInLesson(lesson.Id)">Enroll</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
 
 @code {
     private List<LessonDTO>? lessons;
+    private HashSet<int> userLessonIds = new HashSet<int>();
+    private string defaultImageUrl = "/Images/lesssonsPictures/NoPicture.png";
 
     protected override async Task OnInitializedAsync()
     {
-        var client = HttpClientFactory.CreateClient("SystemApiClient");
-        lessons = await client.GetFromJsonAsync<List<LessonDTO>>("api/lesson");
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var userIdClaim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
+            {
+                await LoadUserLessonIds(userId);
+                await LoadAllLessons();
+            }
+        }
+        else
+        {
+            Navigation.NavigateTo("/identity/account/login");
+        }
+    }
+
+    private async Task LoadAllLessons()
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            lessons = await client.GetFromJsonAsync<List<LessonDTO>>("api/lesson");
+            Console.WriteLine($"Fetched {lessons?.Count ?? 0} lessons.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching all lessons: {ex.Message}");
+        }
+    }
+
+    private async Task LoadUserLessons()
+    {
+        try
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+
+            if (user.Identity?.IsAuthenticated == true)
+            {
+                var userIdClaim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
+                {
+                    var client = HttpClientFactory.CreateClient("SystemApiClient");
+                    var userLessons = await client.GetFromJsonAsync<List<UserLessonDTO>>($"api/lesson/my-lessons/{userId}");
+                    lessons = userLessons.Select(ul => ul.Lesson!).ToList();
+                    Console.WriteLine($"Fetched {lessons.Count} user lessons for user ID {userId}.");
+                }
+                else
+                {
+                    lessons = new List<LessonDTO>(); // No valid user ID found
+                    Console.WriteLine("No valid user ID found.");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching user lessons: {ex.Message}");
+        }
+    }
+
+    private async Task LoadUserLessonIds(int userId)
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            var userLessons = await client.GetFromJsonAsync<List<UserLessonDTO>>($"api/lesson/my-lessons/{userId}");
+            userLessonIds = userLessons.Select(ul => ul.Lesson!.Id).ToHashSet();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching user lesson IDs: {ex.Message}");
+        }
+    }
+
+    private string GetImageUrl(string? imageUrl)
+    {
+        return string.IsNullOrEmpty(imageUrl) ? defaultImageUrl : imageUrl;
+    }
+
+    private async Task EnrollInLesson(int lessonId)
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+            var userIdClaim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
+            {
+                var enrollment = new UserLessonDTO { UserId = userId, LessonId = lessonId };
+                var response = await client.PostAsJsonAsync("api/lesson/enroll", enrollment);
+                var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
+
+                if (result != null && result.Flag)
+                {
+                    userLessonIds.Add(lessonId);
+                    await LoadAllLessons();
+                }
+                else
+                {
+                    Console.WriteLine($"Error enrolling in lesson: {result?.Message}");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error enrolling in lesson: {ex.Message}");
+        }
+    }
+
+    private async Task CancelEnrollment(int lessonId)
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var user = authState.User;
+            var userIdClaim = user.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
+            {
+                var enrollment = new UserLessonDTO { UserId = userId, LessonId = lessonId };
+                var response = await client.PostAsJsonAsync("api/lesson/cancel", enrollment);
+                var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
+
+                if (result != null && result.Flag)
+                {
+                    userLessonIds.Remove(lessonId);
+                    await LoadAllLessons();
+                }
+                else
+                {
+                    Console.WriteLine($"Error canceling enrollment: {result?.Message}");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error canceling enrollment: {ex.Message}");
+        }
     }
 }
