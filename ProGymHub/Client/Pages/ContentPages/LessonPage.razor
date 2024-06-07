@@ -1,0 +1,29 @@
+﻿@page "/lessons"
+@using BaseLibrary.DTOs
+@inject IHttpClientFactory HttpClientFactory
+
+<h3>Lesson List</h3>
+
+@if (lessons == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <ul>
+        @foreach (var lesson in lessons)
+        {
+            <li>@lesson.Name - @lesson.Date.ToString("yyyy-MM-dd")</li>
+        }
+    </ul>
+}
+
+@code {
+    private List<LessonDTO>? lessons;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var client = HttpClientFactory.CreateClient("SystemApiClient");
+        lessons = await client.GetFromJsonAsync<List<LessonDTO>>("api/lesson");
+    }
+}
