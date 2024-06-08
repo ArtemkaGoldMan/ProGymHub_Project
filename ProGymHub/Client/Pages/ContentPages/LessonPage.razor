@@ -34,7 +34,7 @@
                         <div class="card-body">
                             <h5 class="card-title">@lesson.Name</h5>
                             <p class="card-text">@lesson.Description.Substring(0, Math.Min(lesson.Description.Length, 100))...</p>
-                            <p class="card-text"><small class="text-muted">@lesson.Date.ToString("yyyy-MM-dd")</small></p>
+                            <p class="card-text"><small class="text-muted">@lesson.Day.ToString() @lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</small></p>
 
                             @if (userLessonIds.Contains(lesson.Id))
                             {
@@ -127,7 +127,7 @@
         {
             var client = HttpClientFactory.CreateClient("SystemApiClient");
             var userLessons = await client.GetFromJsonAsync<List<UserLessonDTO>>($"api/lesson/my-lessons/{userId}");
-            userLessonIds = userLessons.Select(ul => ul.Lesson!.Id).ToHashSet();
+            userLessonIds = userLessons!.Select(ul => ul.Lesson!.Id).ToHashSet();
         }
         catch (Exception ex)
         {

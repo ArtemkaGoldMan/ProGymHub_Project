@@ -12,6 +12,7 @@ namespace BaseLibrary.Entities
         public string? FullName { get; set; }
         public string? Email { get; set; }
         public string? Passsword { get; set; }
+        public string? PhotoUrl { get; set; }
 
         // Navigation property
         public ICollection<UserLesson>? UserLessons { get; set; }

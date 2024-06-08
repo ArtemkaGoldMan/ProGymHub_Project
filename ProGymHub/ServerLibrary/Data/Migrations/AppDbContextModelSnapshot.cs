@@ -39,6 +39,9 @@ namespace ServerLibrary.Data.Migrations
                     b.Property<string>("Passsword")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("PhotoUrl")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("ApplicationUsers");

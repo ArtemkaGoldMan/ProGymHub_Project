@@ -26,7 +26,9 @@ namespace ServerLibrary.Repositories.Implementations
                 Name = lessonDto.Name,
                 Description = lessonDto.Description,
                 ImageUrl = lessonDto.ImageUrl,
-                Date = lessonDto.Date
+                Day = lessonDto.Day,
+                StartTime = lessonDto.StartTime,
+                EndTime = lessonDto.EndTime
             };
 
             _context.Lessons.Add(lesson);
@@ -47,7 +49,9 @@ namespace ServerLibrary.Repositories.Implementations
             lesson.Name = lessonDto.Name;
             lesson.Description = lessonDto.Description;
             lesson.ImageUrl = lessonDto.ImageUrl;
-            lesson.Date = lessonDto.Date;
+            lesson.Day = lessonDto.Day;
+            lesson.StartTime = lessonDto.StartTime;
+            lesson.EndTime = lessonDto.EndTime;
 
             _context.Lessons.Update(lesson);
             await _context.SaveChangesAsync();
@@ -77,7 +81,9 @@ namespace ServerLibrary.Repositories.Implementations
                 Name = lesson.Name,
                 Description = lesson.Description,
                 ImageUrl = lesson.ImageUrl,
-                Date = lesson.Date
+                Day = lesson.Day,
+                StartTime = lesson.StartTime,
+                EndTime = lesson.EndTime
             }).ToListAsync();
         }
 
@@ -96,7 +102,9 @@ namespace ServerLibrary.Repositories.Implementations
                         Name = ul.Lesson.Name,
                         Description = ul.Lesson.Description,
                         ImageUrl = ul.Lesson.ImageUrl,
-                        Date = ul.Lesson.Date
+                        Day = ul.Lesson.Day,
+                        StartTime = ul.Lesson.StartTime,
+                        EndTime = ul.Lesson.EndTime
                     }
                 }).ToListAsync();
         }
