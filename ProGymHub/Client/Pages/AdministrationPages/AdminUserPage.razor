@@ -1,0 +1,68 @@
+﻿@page "/admin/users"
+@inject IHttpClientFactory HttpClientFactory
+@inject NavigationManager Navigation
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card bg-dark text-white" style="opacity: 0.85; margin-top: 20px; border-radius: 10px;">
+                <div class="card-header text-center fs-5">User Management</div>
+                <div class="card-body">
+                    @if (users == null)
+                    {
+                        <p><em>Loading...</em></p>
+                    }
+                    else
+                    {
+                        <table class="table table-dark table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Full Name</th>
+                                    <th>Email</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var user in users)
+                                {
+                                    <tr>
+                                        <td>@user.Id</td>
+                                        <td>@user.FullName</td>
+                                        <td>@user.Email</td>
+                                        <td>
+                                            <button class="btn btn-danger" @onclick="() => DeleteUser(user.Id)">Delete</button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<UserDetailDTO> users;
+    private HttpClient Http => HttpClientFactory.CreateClient("SystemApiClient");
+
+    protected override async Task OnInitializedAsync()
+    {
+        users = await Http.GetFromJsonAsync<List<UserDetailDTO>>("api/usermanagement/all-users");
+    }
+
+    private async Task DeleteUser(int userId)
+    {
+        var response = await Http.DeleteAsync($"api/usermanagement/delete/{userId}");
+        if (response.IsSuccessStatusCode)
+        {
+            users = await Http.GetFromJsonAsync<List<UserDetailDTO>>("api/usermanagement/all-users");
+        }
+        else
+        {
+            // Handle error
+        }
+    }
+}

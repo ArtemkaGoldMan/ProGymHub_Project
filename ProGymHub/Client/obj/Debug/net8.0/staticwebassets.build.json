@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RRxQLSwFtZ74M8m3EOk1dWhdMKIDmErSs6xEamJDEEk=",
+  "Hash": "46Xn7/hSGGlF3cjT3HssJA0aNOpMMqd4iE8k+O7bAjY=",
   "Source": "Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -50973,6 +50973,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\lesssonsPictures\\NoPicture.png"
+    },
+    {
+      "Identity": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\noPicture.png",
+      "SourceId": "Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "Images/userPictures/noPicture.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\userPictures\\noPicture.png"
     },
     {
       "Identity": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\index.html",

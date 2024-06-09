@@ -3,44 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\baselibrary\\dtos\\userlessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\userlessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\contracts\\iusermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\iusermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\baselibrary\\dtos\\userwithlessonsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\userwithlessonsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37D595F5-6074-46A6-AFC0-199F9BFF4DA1}|Server\\Server.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\server\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37D595F5-6074-46A6-AFC0-199F9BFF4DA1}|Server\\Server.csproj|solutionrelative:server\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\baselibrary\\dtos\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\dtos\\lessondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\baselibrary\\entities\\userlesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\userlesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\baselibrary\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2CDC3EC7-0DEF-4E8F-A81B-B3DCD0199E9C}|BaseLibrary\\BaseLibrary.csproj|solutionrelative:baselibrary\\entities\\lesson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\pages\\contentpages\\lessonpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|solutionrelative:client\\pages\\contentpages\\lessonpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\pages\\administrationpages\\adminlessonpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|solutionrelative:client\\pages\\administrationpages\\adminlessonpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37D595F5-6074-46A6-AFC0-199F9BFF4DA1}|Server\\Server.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\server\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37D595F5-6074-46A6-AFC0-199F9BFF4DA1}|Server\\Server.csproj|solutionrelative:server\\controllers\\lessoncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\implementations\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\lessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\contracts\\ilessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\ilessonrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\implementations\\usermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\usermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,136 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 187,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserLessonDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\DTOs\\UserLessonDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\UserLessonDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\DTOs\\UserLessonDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\UserLessonDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:04:00.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserWithLessonsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\DTOs\\UserWithLessonsDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\UserWithLessonsDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\DTOs\\UserWithLessonsDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\UserWithLessonsDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "UserManagementController.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server\\Controllers\\UserManagementController.cs",
+              "RelativeDocumentMoniker": "Server\\Controllers\\UserManagementController.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server\\Controllers\\UserManagementController.cs",
+              "RelativeToolTip": "Server\\Controllers\\UserManagementController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAmwCQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:03:56.477Z",
+              "WhenOpened": "2024-06-09T19:31:59.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LessonDTO.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\DTOs\\LessonDTO.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\DTOs\\LessonDTO.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\DTOs\\LessonDTO.cs",
-              "RelativeToolTip": "BaseLibrary\\DTOs\\LessonDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "UserManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAuwC4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:03:35.134Z",
+              "WhenOpened": "2024-06-09T19:31:36.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserLesson.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\Entities\\UserLesson.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\UserLesson.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\Entities\\UserLesson.cs",
-              "RelativeToolTip": "BaseLibrary\\Entities\\UserLesson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 0,
+              "Title": "IUserManagementRepository.cs",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
+              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
+              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
+              "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:03:23.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Lesson.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\Entities\\Lesson.cs",
-              "RelativeDocumentMoniker": "BaseLibrary\\Entities\\Lesson.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\BaseLibrary\\Entities\\Lesson.cs",
-              "RelativeToolTip": "BaseLibrary\\Entities\\Lesson.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:03:05.764Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "LessonPage.razor",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\ContentPages\\LessonPage.razor",
-              "RelativeDocumentMoniker": "Client\\Pages\\ContentPages\\LessonPage.razor",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\ContentPages\\LessonPage.razor",
-              "RelativeToolTip": "Client\\Pages\\ContentPages\\LessonPage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAMwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T16:02:35.377Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AdminLessonPage.razor",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\AdministrationPages\\AdminLessonPage.razor",
-              "RelativeDocumentMoniker": "Client\\Pages\\AdministrationPages\\AdminLessonPage.razor",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\AdministrationPages\\AdminLessonPage.razor",
-              "RelativeToolTip": "Client\\Pages\\AdministrationPages\\AdminLessonPage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAP4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-08T16:02:20.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LessonController.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server\\Controllers\\LessonController.cs",
-              "RelativeDocumentMoniker": "Server\\Controllers\\LessonController.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server\\Controllers\\LessonController.cs",
-              "RelativeToolTip": "Server\\Controllers\\LessonController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAcwFEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:01:26.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ILessonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Contracts\\ILessonRepository.cs",
-              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\ILessonRepository.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Contracts\\ILessonRepository.cs",
-              "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\ILessonRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T16:00:07.658Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LessonRepository.cs",
-              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Implementations\\LessonRepository.cs",
-              "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\LessonRepository.cs",
-              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Implementations\\LessonRepository.cs",
-              "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\LessonRepository.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAI4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-08T15:54:48.833Z",
+              "WhenOpened": "2024-06-09T19:31:24.047Z",
               "EditorCaption": ""
             }
           ]

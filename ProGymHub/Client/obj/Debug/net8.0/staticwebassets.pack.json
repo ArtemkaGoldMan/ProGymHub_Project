@@ -21,6 +21,10 @@
       "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\NoPicture.png"
     },
     {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\noPicture.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\noPicture.png"
+    },
+    {
       "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\bootstrap-icons\\bootstrap-icons.svg",
       "PackagePath": "staticwebassets\\bootstrap-icons\\bootstrap-icons.svg"
     },
