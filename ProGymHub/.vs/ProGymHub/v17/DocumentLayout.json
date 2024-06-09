@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\contracts\\iusermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\iusermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|solutionrelative:client\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|solutionrelative:client\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\client\\pages\\contentpages\\accountpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{22C7C26D-F247-442B-97FB-F6528877C952}|Client\\Client.csproj|solutionrelative:client\\pages\\contentpages\\accountpage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37D595F5-6074-46A6-AFC0-199F9BFF4DA1}|Server\\Server.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\server\\controllers\\usermanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +21,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\implementations\\usermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\implementations\\usermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|c:\\users\\artem\\documents\\myprojects!!! biba\\gym app c# blazor webassembly project\\progymhub_project\\progymhub\\serverlibrary\\repositories\\contracts\\iusermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B432EF9D-8D50-4343-800B-C528EF2FC096}|ServerLibrary\\ServerLibrary.csproj|solutionrelative:serverlibrary\\repositories\\contracts\\iusermanagementrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +34,82 @@
       "DocumentGroups": [
         {
           "DockedWidth": 187,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Client\\Layout\\NavMenu.razor",
+              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "Client\\Layout\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T20:05:15.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "MainLayout.razor",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\MainLayout.razor",
+              "RelativeDocumentMoniker": "Client\\Layout\\MainLayout.razor",
+              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Layout\\MainLayout.razor",
+              "RelativeToolTip": "Client\\Layout\\MainLayout.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T20:05:09.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountPage.razor",
+              "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\ContentPages\\AccountPage.razor",
+              "RelativeDocumentMoniker": "Client\\Pages\\ContentPages\\AccountPage.razor",
+              "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Pages\\ContentPages\\AccountPage.razor",
+              "RelativeToolTip": "Client\\Pages\\ContentPages\\AccountPage.razor",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAuwKAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-09T19:40:28.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserManagementController.cs",
               "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server\\Controllers\\UserManagementController.cs",
               "RelativeDocumentMoniker": "Server\\Controllers\\UserManagementController.cs",
               "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Server\\Controllers\\UserManagementController.cs",
               "RelativeToolTip": "Server\\Controllers\\UserManagementController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAmwCQAAAABAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T19:31:59.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "UserManagementRepository.cs",
               "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
               "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
               "RelativeToolTip": "ServerLibrary\\Repositories\\Implementations\\UserManagementRepository.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAuwC4AAAABAAAA",
+              "ViewState": "AQIAACUAAAAAAAAAAAAQwD4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T19:31:36.719Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "IUserManagementRepository.cs",
               "DocumentMoniker": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
               "RelativeDocumentMoniker": "ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
               "ToolTip": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
               "RelativeToolTip": "ServerLibrary\\Repositories\\Contracts\\IUserManagementRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-09T19:31:24.047Z",
               "EditorCaption": ""

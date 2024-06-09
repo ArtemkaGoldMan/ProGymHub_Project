@@ -8,6 +8,8 @@ namespace ServerLibrary.Repositories.Contracts
     public interface IUserManagementRepository
     {
         Task<IEnumerable<UserDetailDTO>> GetAllUsersAsync();
+        Task<UserDetailDTO> GetUserByIdAsync(int userId);
+        Task<GeneralResponse> UpdateUserAsync(UserDetailDTO userDetail);
         Task<GeneralResponse> DeleteUserAsync(int userId);
     }
 }

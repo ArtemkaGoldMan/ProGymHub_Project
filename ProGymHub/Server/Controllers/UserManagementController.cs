@@ -10,7 +10,7 @@ namespace Server.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "Admin")]
+    [Authorize]
     public class UserManagementController : ControllerBase
     {
         private readonly IUserManagementRepository _userManagementRepository;
@@ -25,6 +25,30 @@ namespace Server.Controllers
         {
             var users = await _userManagementRepository.GetAllUsersAsync();
             return Ok(users);
+        }
+
+        [HttpGet("{userId}")]
+        public async Task<ActionResult<UserDetailDTO>> GetUserById(int userId)
+        {
+            var user = await _userManagementRepository.GetUserByIdAsync(userId);
+            if (user == null)
+            {
+                return NotFound(new GeneralResponse(false, "User not found"));
+            }
+
+            return Ok(user);
+        }
+
+        [HttpPut("update")]
+        public async Task<ActionResult<GeneralResponse>> UpdateUser(UserDetailDTO userDetail)
+        {
+            var result = await _userManagementRepository.UpdateUserAsync(userDetail);
+            if (!result.Flag)
+            {
+                return BadRequest(result);
+            }
+
+            return Ok(result);
         }
 
         [HttpDelete("delete/{userId}")]
