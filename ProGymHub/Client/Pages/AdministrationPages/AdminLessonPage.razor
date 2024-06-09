@@ -1,0 +1,254 @@
+﻿@page "/alesson"
+@using BaseLibrary.DTOs
+@using BaseLibrary.Responses
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Security.Claims
+@inject IHttpClientFactory HttpClientFactory
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<div class="container">
+    <h3 class="text-center my-4">Admin - Lesson Management</h3>
+
+    <div class="d-flex justify-content-end mb-3">
+        <button class="btn btn-primary" @onclick="ShowAddLessonModal">Add Lesson</button>
+    </div>
+
+    @if (lessons == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else if (!lessons.Any())
+    {
+        <p>No lessons available.</p>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var lesson in lessons)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="@GetImageUrl(lesson.ImageUrl)" class="card-img-top" alt="@lesson.Name" />
+                        <div class="card-body">
+                            <h5 class="card-title">@lesson.Name</h5>
+                            <p class="card-text">@lesson.Description.Substring(0, Math.Min(lesson.Description.Length, 100))...</p>
+                            <p class="card-text"><small class="text-muted">@lesson.Day.ToString() @lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</small></p>
+                            <button class="btn btn-warning me-2" @onclick="() => ShowEditLessonModal(lesson)">Edit</button>
+                            <button class="btn btn-danger" @onclick="() => DeleteLesson(lesson.Id)">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    @if (isModalVisible)
+    {
+        <div class="modal show d-block" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">@modalTitle</h5>
+                        <button type="button" class="btn-close" @onclick="HideModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <EditForm Model="@lessonToEdit" OnValidSubmit="@HandleValidSubmit">
+                            <DataAnnotationsValidator />
+                            <ValidationSummary />
+
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <InputText id="name" class="form-control" @bind-Value="lessonToEdit.Name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">Description</label>
+                                <InputTextArea id="description" class="form-control" @bind-Value="lessonToEdit.Description" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="imageUrl" class="form-label">Image URL</label>
+                                <InputText id="imageUrl" class="form-control" @bind-Value="lessonToEdit.ImageUrl" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="day" class="form-label">Day</label>
+                                <InputSelect id="day" class="form-control" @bind-Value="lessonToEdit.Day">
+                                    @foreach (var day in Enum.GetValues(typeof(DayOfWeek)))
+                                    {
+                                        <option value="@day">@day</option>
+                                    }
+                                </InputSelect>
+                            </div>
+                            <div class="mb-3">
+                                <label for="startTime" class="form-label">Start Time</label>
+                                <InputText id="startTime" class="form-control" @bind-Value="formattedStartTime" @onchange="HandleStartTimeChange" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="endTime" class="form-label">End Time</label>
+                                <InputText id="endTime" class="form-control" @bind-Value="formattedEndTime" @onchange="HandleEndTimeChange" />
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </EditForm>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop show"></div>
+    }
+</div>
+
+@code {
+    private List<LessonDTO>? lessons;
+    private LessonDTO lessonToEdit = new LessonDTO();
+    private bool isModalVisible = false;
+    private string modalTitle = string.Empty;
+
+    private string formattedStartTime
+    {
+        get => lessonToEdit.StartTime.ToString(@"hh\:mm");
+        set
+        {
+            if (TimeSpan.TryParse(value, out var time))
+            {
+                lessonToEdit.StartTime = time;
+            }
+        }
+    }
+
+    private string formattedEndTime
+    {
+        get => lessonToEdit.EndTime.ToString(@"hh\:mm");
+        set
+        {
+            if (TimeSpan.TryParse(value, out var time))
+            {
+                lessonToEdit.EndTime = time;
+            }
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadAllLessons();
+    }
+
+    private async Task LoadAllLessons()
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            lessons = await client.GetFromJsonAsync<List<LessonDTO>>("api/lesson");
+            Console.WriteLine($"Fetched {lessons?.Count ?? 0} lessons.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching all lessons: {ex.Message}");
+        }
+    }
+
+    private void ShowAddLessonModal()
+    {
+        lessonToEdit = new LessonDTO();
+        modalTitle = "Add Lesson";
+        isModalVisible = true;
+    }
+
+    private void ShowEditLessonModal(LessonDTO lesson)
+    {
+        lessonToEdit = new LessonDTO
+            {
+                Id = lesson.Id,
+                Name = lesson.Name,
+                Description = lesson.Description,
+                ImageUrl = lesson.ImageUrl,
+                Day = lesson.Day,
+                StartTime = lesson.StartTime,
+                EndTime = lesson.EndTime
+            };
+        modalTitle = "Edit Lesson";
+        isModalVisible = true;
+    }
+
+    private void HideModal()
+    {
+        isModalVisible = false;
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            HttpResponseMessage response;
+
+            if (lessonToEdit.Id == 0)
+            {
+                response = await client.PostAsJsonAsync("api/lesson/create", lessonToEdit);
+            }
+            else
+            {
+                response = await client.PutAsJsonAsync($"api/lesson/update/{lessonToEdit.Id}", lessonToEdit);
+            }
+
+            var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
+
+            if (result.Flag)
+            {
+                await LoadAllLessons();
+                HideModal();
+            }
+            else
+            {
+                Console.WriteLine($"Error: {result.Message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteLesson(int lessonId)
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            var response = await client.DeleteAsync($"api/lesson/delete/{lessonId}");
+            var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
+
+            if (result != null && result.Flag)
+            {
+                await LoadAllLessons();
+            }
+            else
+            {
+                Console.WriteLine($"Error deleting lesson: {result?.Message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting lesson: {ex.Message}");
+        }
+    }
+
+    private string GetImageUrl(string? imageUrl)
+    {
+        return string.IsNullOrEmpty(imageUrl) ? "/Images/lesssonsPictures/NoPicture.png" : imageUrl;
+    }
+
+    private void HandleStartTimeChange(ChangeEventArgs e)
+    {
+        if (TimeSpan.TryParse(e.Value?.ToString(), out var time))
+        {
+            lessonToEdit.StartTime = time;
+        }
+    }
+
+    private void HandleEndTimeChange(ChangeEventArgs e)
+    {
+        if (TimeSpan.TryParse(e.Value?.ToString(), out var time))
+        {
+            lessonToEdit.EndTime = time;
+        }
+    }
+}

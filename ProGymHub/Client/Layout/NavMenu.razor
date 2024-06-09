@@ -1,10 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
+
 <div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">
             Hi,
             <AuthorizeView>
-                <Authorized>@context.User.Identity!.Name</Authorized> <!-- Part to display name of user in left upper corner -->
+                <Authorized>@context.User.Identity!.Name</Authorized>
                 <NotAuthorized>Guest</NotAuthorized>
             </AuthorizeView>
         </a>
@@ -14,21 +15,56 @@
     </div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+<div class="nav-scrollable @(collapseNavMenu ? "collapse" : "show")">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
                 <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
             </NavLink>
         </div>
+        <AuthorizeView Roles="Admin">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="/admin/users">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Manage Users
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        <AuthorizeView Roles="Admin">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="aschedule">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Schedule
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        <AuthorizeView Roles="User">
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Counter
+            <NavLink class="nav-link" href="schedule">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Schedule
+            </NavLink>
+        </div>
+        </AuthorizeView>
+        <AuthorizeView Roles="Admin">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="alesson">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Manage Lessons
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        <AuthorizeView Roles="User">
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="ulesson">
+                    <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Lessons
+                </NavLink>
+            </div>
+        </AuthorizeView>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="account">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Account
             </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="weather">
-                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
+            <NavLink class="nav-link" href="about">
+                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> About
             </NavLink>
         </div>
     </nav>

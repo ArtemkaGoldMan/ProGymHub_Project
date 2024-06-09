@@ -55,6 +55,11 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Registry.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\mscorlib.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\netstandard.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Buttons.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Core.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Popups.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Themes.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Licensing.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.AppContext.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Buffers.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Collections.Concurrent.wasm
@@ -220,6 +225,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\WindowsBase.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.DependencyInjection.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Text.Encoding.CodePages.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Core.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Diagnostics.Contracts.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.Numerics.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\icudt_no_CJK.dat.gz
@@ -229,6 +235,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Reflection.Emit.Lightweight.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.Pipelines.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Net.NetworkInformation.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Popups.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.ComponentModel.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Authorization.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\ClientLibrary.pdb.gz
@@ -249,6 +256,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\WindowsBase.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Net.ServicePoint.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.Cng.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Licensing.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Security.Principal.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.Configuration.Binder.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Registry.wasm.gz
@@ -274,6 +282,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.CompilerServices.VisualC.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Win32.Primitives.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Linq.Parallel.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Buttons.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.FileSystem.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.Compression.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Collections.NonGeneric.wasm.gz
@@ -300,6 +309,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Reflection.TypeExtensions.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.Options.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Runtime.InteropServices.RuntimeInformation.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Syncfusion.Blazor.Themes.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.IO.IsolatedStorage.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Net.WebHeaderCollection.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.Extensions.Logging.Abstractions.wasm.gz
@@ -438,6 +448,7 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Forms.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Xml.wasm.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\wwwroot\_framework\System.Security.Cryptography.Encoding.wasm.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\libman.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Client.staticwebassets.runtime.json
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Client.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Client.pdb
@@ -474,6 +485,11 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Syncfusion.Blazor.Buttons.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Syncfusion.Blazor.Core.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Syncfusion.Blazor.Popups.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Syncfusion.Blazor.Themes.dll
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Syncfusion.Licensing.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\System.IO.Pipelines.dll
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\bin\Debug\net8.0\Microsoft.CSharp.dll
@@ -697,6 +713,11 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Microsoft.IdentityModel.Tokens.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Microsoft.JSInterop.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Microsoft.JSInterop.WebAssembly.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Syncfusion.Blazor.Buttons.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Syncfusion.Blazor.Core.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Syncfusion.Blazor.Popups.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Syncfusion.Blazor.Themes.wasm
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Syncfusion.Licensing.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\System.IdentityModel.Tokens.Jwt.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\System.IO.Pipelines.wasm
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\webcil\Microsoft.CSharp.wasm
@@ -917,6 +938,11 @@ C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly projec
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\p3we6vswwg.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\c263svgjjn.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\p2cjeqnq05.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\a4caxe33zo.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\0jaiz5fswp.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\1fupht59rr.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\ee4zsyp94b.gz
+C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\6he6rv7215.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\t96il0074u.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\15or1u9p3k.gz
 C:\Users\artem\Documents\MyProjects!!! Biba\Gym App C# Blazor WebAssembly project\ProGymHub_Project\ProGymHub\Client\obj\Debug\net8.0\compressed\hz1vre1w2z.gz

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "cyWIgjiQMZOYkkRVU8Id86HRTm2wTuJ6MXTTN5+FCHiBsYunsxjUw5zwS5N4V0n0H/EAtevDcI7bZlqJcEb0ew==",
+  "dgSpecHash": "Jii2FOQAFarOCF63ehTr5GoUDaWe8V6G/hgnxjDucuuIb5SSvmKjLeJ1yrE2w+iKkL2ECTWpsO95Qk3o5bS22g==",
   "success": true,
   "projectFilePath": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\Client.csproj",
   "expectedPackageFiles": [
@@ -41,6 +41,11 @@
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.jsinterop.webassembly\\8.0.4\\microsoft.jsinterop.webassembly.8.0.4.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.4\\microsoft.net.illink.tasks.8.0.4.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\microsoft.net.sdk.webassembly.pack\\8.0.4\\microsoft.net.sdk.webassembly.pack.8.0.4.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\syncfusion.blazor.buttons\\23.1.36\\syncfusion.blazor.buttons.23.1.36.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\syncfusion.blazor.core\\23.1.36\\syncfusion.blazor.core.23.1.36.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\syncfusion.blazor.popups\\23.1.36\\syncfusion.blazor.popups.23.1.36.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\syncfusion.blazor.themes\\23.1.36\\syncfusion.blazor.themes.23.1.36.nupkg.sha512",
+    "C:\\Users\\artem\\.nuget\\packages\\syncfusion.licensing\\23.1.36\\syncfusion.licensing.23.1.36.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.identitymodel.tokens.jwt\\7.5.2\\system.identitymodel.tokens.jwt.7.5.2.nupkg.sha512",
     "C:\\Users\\artem\\.nuget\\packages\\system.io.pipelines\\8.0.0\\system.io.pipelines.8.0.0.nupkg.sha512",

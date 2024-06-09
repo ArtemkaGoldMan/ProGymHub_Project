@@ -1,0 +1,160 @@
+﻿@page "/account"
+@using BaseLibrary.DTOs
+@using BaseLibrary.Responses
+@using Microsoft.AspNetCore.Components.Authorization
+@using System.Net.Http
+@using System.Security.Claims
+@inject IHttpClientFactory HttpClientFactory
+@inject NavigationManager Navigation
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+<div class="container">
+    <h3 class="text-center my-4">Account Details</h3>
+
+    @if (user == null)
+    {
+        <p class="text-center"><em>Loading...</em></p>
+    }
+    else
+    {
+        <div class="card mx-auto" style="max-width: 400px;">
+            <img src="@GetProfileImageUrl(user.PhotoUrl)" alt="User Photo" class="card-img-top profile-photo" />
+            <div class="card-body text-center">
+                <h5 class="card-title">@user.FullName</h5>
+                <p class="card-text">@user.Email</p>
+
+                <button class="btn btn-primary mt-3" @onclick="ShowEditForm">Edit Profile</button>
+                <button class="btn btn-danger mt-3" @onclick="DeleteAccount">Delete Account</button>
+
+                @if (isEditFormVisible)
+                {
+                    <EditForm Model="@user" OnValidSubmit="@UpdateProfile">
+                        <DataAnnotationsValidator />
+                        <ValidationSummary />
+                        <div class="mb-3">
+                            <label for="FullName" class="form-label">Full Name</label>
+                            <InputText id="FullName" class="form-control" @bind-Value="user.FullName" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="Email" class="form-label">Email</label>
+                            <InputText id="Email" class="form-control" @bind-Value="user.Email" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="PhotoUrl" class="form-label">Photo URL</label>
+                            <InputText id="PhotoUrl" class="form-control" @bind-Value="user.PhotoUrl" />
+                        </div>
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                        <button type="button" class="btn btn-secondary" @onclick="HideEditForm">Cancel</button>
+                    </EditForm>
+                }
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private UserDetailDTO? user;
+    private bool isEditFormVisible = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var userClaim = authState.User;
+
+        if (userClaim.Identity?.IsAuthenticated == true)
+        {
+            var userIdClaim = userClaim.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+            if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
+            {
+                await LoadUserProfile(userId);
+            }
+        }
+        else
+        {
+            Navigation.NavigateTo("/identity/account/login");
+        }
+    }
+
+    private async Task LoadUserProfile(int userId)
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            user = await client.GetFromJsonAsync<UserDetailDTO>($"api/usermanagement/{userId}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error fetching user profile: {ex.Message}");
+        }
+    }
+
+    private string GetProfileImageUrl(string? photoUrl)
+    {
+        return string.IsNullOrEmpty(photoUrl) ? "Images/userPictures/noPicture.png" : photoUrl;
+    }
+
+    private void ShowEditForm()
+    {
+        isEditFormVisible = true;
+    }
+
+    private void HideEditForm()
+    {
+        isEditFormVisible = false;
+    }
+
+    private async Task UpdateProfile()
+    {
+        try
+        {
+            var client = HttpClientFactory.CreateClient("SystemApiClient");
+            var response = await client.PutAsJsonAsync("api/usermanagement/update", user);
+
+            if (response.IsSuccessStatusCode)
+            {
+                Console.WriteLine("Profile updated successfully.");
+                HideEditForm();
+            }
+            else
+            {
+                var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
+                Console.WriteLine($"Error updating profile: {result?.Message}");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error updating profile: {ex.Message}");
+        }
+    }
+
+    private async Task DeleteAccount()
+    {
+        try
+        {
+            var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+            var userClaim = authState.User;
+            var userIdClaim = userClaim.FindFirst(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+
+            if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
+            {
+                var client = HttpClientFactory.CreateClient("SystemApiClient");
+                var response = await client.DeleteAsync($"api/usermanagement/delete/{userId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    Console.WriteLine("Account deleted successfully.");
+                    Navigation.NavigateTo("/identity/account/login");
+                }
+                else
+                {
+                    var result = await response.Content.ReadFromJsonAsync<GeneralResponse>();
+                    Console.WriteLine($"Error deleting account: {result?.Message}");
+                }
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error deleting account: {ex.Message}");
+        }
+    }
+}
