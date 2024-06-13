@@ -29,11 +29,18 @@
             {
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="@GetImageUrl(lesson.ImageUrl)" class="card-img-top" alt="@lesson.Name" />
+                        <img src="@GetImageUrl(lesson.ImageUrl)" class="card-img-top lesson-image" alt="@lesson.Name" />
                         <div class="card-body">
                             <h5 class="card-title">@lesson.Name</h5>
-                            <p class="card-text">@lesson.Description.Substring(0, Math.Min(lesson.Description.Length, 100))...</p>
-                            <p class="card-text"><small class="text-muted">@lesson.Day.ToString() @lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</small></p>
+                            <p class="card-text">
+                                @lesson.Description!.Substring(0, Math.Min(lesson.Description.Length, 20))...
+                            </p>
+                            <button class="btn btn-link" @onclick="() => ShowDescriptionModal(lesson.Name!, lesson.Description)">
+                                Read More
+                            </button>
+                            <p class="card-text">
+                                <small class="text-muted">@lesson.Day.ToString() @lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</small>
+                            </p>
                             <button class="btn btn-warning me-2" @onclick="() => ShowEditLessonModal(lesson)">Edit</button>
                             <button class="btn btn-danger" @onclick="() => DeleteLesson(lesson.Id)">Delete</button>
                         </div>
@@ -41,6 +48,27 @@
                 </div>
             }
         </div>
+    }
+
+    @if (isDescriptionModalVisible)
+    {
+        <div class="modal show d-block" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">@selectedLessonTitle</h5>
+                        <button type="button" class="btn-close" @onclick="HideDescriptionModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>@selectedLessonDescription</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="HideDescriptionModal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop show"></div>
     }
 
     @if (isModalVisible)
@@ -102,6 +130,9 @@
     private LessonDTO lessonToEdit = new LessonDTO();
     private bool isModalVisible = false;
     private string modalTitle = string.Empty;
+    private bool isDescriptionModalVisible = false;
+    private string selectedLessonDescription = string.Empty;
+    private string selectedLessonTitle = string.Empty;
 
     private string formattedStartTime
     {
@@ -172,6 +203,18 @@
     private void HideModal()
     {
         isModalVisible = false;
+    }
+
+    private void ShowDescriptionModal(string title, string description)
+    {
+        selectedLessonTitle = title;
+        selectedLessonDescription = description;
+        isDescriptionModalVisible = true;
+    }
+
+    private void HideDescriptionModal()
+    {
+        isDescriptionModalVisible = false;
     }
 
     private async Task HandleValidSubmit()
@@ -252,3 +295,12 @@
         }
     }
 }
+
+<style>
+    .lesson-image {
+        width: 100%;
+        height: 300px; /* Set a fixed height */
+        object-fit: cover; /* Ensures the image covers the area and maintains aspect ratio */
+    }
+
+</style>

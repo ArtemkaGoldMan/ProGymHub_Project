@@ -2,9 +2,6 @@
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
             <AuthorizeRouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)">
-                <!--<NotAuthorized>
-                    <p>You are not authorized to access this page.</p>
-                </NotAuthorized>-->
                 <Authorizing>
                     <p>Please wait a moment...</p>
                 </Authorizing>

@@ -9,12 +9,12 @@
         <div class="top-row px-4">
             <AuthorizeView>
                 <Authorized>
-                    <a class="btn btn-none text-danger" @onclick="LogoutClicked">Logout</a>
+                    <a class="btn btn-none logout-button" @onclick="LogoutClicked">Logout</a>
                 </Authorized>
-                <!--<NotAuthorized>
-                     <a class="btn btn-none" href="identity/account/login">Login</a>
-                     <a class="btn btn-none" href="identity/account/register">Register</a>
-                  </NotAuthorized> -->
+                <NotAuthorized>
+                    <a class="btn btn-none login-button" href="/identity/account/login">Login</a>
+                    <a class="btn btn-none register-button" href="/identity/account/register">Register</a>
+                </NotAuthorized>
             </AuthorizeView>
         </div>
 
@@ -25,6 +25,53 @@
 </div>
 <Syncfusion.Blazor.Popups.SfDialogProvider />
 
+<style>
+    .login-button {
+        color: white;
+        background-color: #7209b7;
+        border: 1px solid #7209b7;
+        text-decoration: none;
+    }
+
+        .login-button:hover,
+        .login-button:focus {
+            color: white;
+            background-color: #7209b7;
+            border: 1px solid #7209b7;
+            text-decoration: none;
+        }
+
+    .register-button {
+        color: white;
+        background-color: #480ca8;
+        border: 1px solid #480ca8;
+        text-decoration: none;
+    }
+
+        .register-button:hover,
+        .register-button:focus {
+            color: white;
+            background-color: #480ca8;
+            border: 1px solid #480ca8;
+            text-decoration: none;
+        }
+
+    .logout-button {
+        color: white;
+        background-color: #dc3545;
+        border: 1px solid #dc3545;
+        text-decoration: none;
+    }
+
+        .logout-button:hover,
+        .logout-button:focus {
+            color: white;
+            background-color: #c82333;
+            border: 1px solid #c82333;
+            text-decoration: none;
+        }
+</style>
+
 @code {
     async Task LogoutClicked()
     {
@@ -33,5 +80,4 @@
         await customAuthStateProvider.UpdateAuthenticationState(logoutModel);
         NavManager.NavigateTo("/", forceLoad: true);
     }
-
 }

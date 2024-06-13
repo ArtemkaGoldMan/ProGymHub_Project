@@ -30,14 +30,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XEF1dGhlbnRpY2F0aW9uTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/AccountPages/LoginPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXExvZ2luUGFnZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/AccountPages/RegistePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFBhZ2VzXFJlZ2lzdGVQYWdlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/AdministrationPages/AdminLessonPage.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYXRpb25QYWdlc1xBZG1pbkxlc3NvblBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,28 +50,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aGVudGljYXRpb25QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/AboutPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEFib3V0UGFnZS5yYXpvcg==
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/LogandRegPages/LoginPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nYW5kUmVnUGFnZXNcTG9naW5QYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/AccountPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEFjY291bnRQYWdlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/HomePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXEhvbWVQYWdlLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/LessonPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXExlc3NvblBhZ2UucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/ContentPages/SchedulePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGVudFBhZ2VzXFNjaGVkdWxlUGFnZS5yYXpvcg==
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/LogandRegPages/RegistePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nYW5kUmVnUGFnZXNcUmVnaXN0ZVBhZ2UucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/OtherPages/ButtonLoadingSpinner.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3RoZXJQYWdlc1xCdXR0b25Mb2FkaW5nU3Bpbm5lci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/SharedPages/BMI.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkUGFnZXNcQk1JLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/SharedPages/HomePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkUGFnZXNcSG9tZVBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/UserPage/AccountPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcQWNjb3VudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/UserPage/LessonPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcTGVzc29uUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/Pages/UserPage/SchedulePage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlclBhZ2VcU2NoZWR1bGVQYWdlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/artem/Documents/MyProjects\!\!\! Biba/Gym App C\# Blazor WebAssembly project/ProGymHub_Project/ProGymHub/Client/_Imports.razor]
