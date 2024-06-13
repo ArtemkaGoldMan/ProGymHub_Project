@@ -1,0 +1,181 @@
+﻿@page "/bmi"
+@using System.ComponentModel.DataAnnotations
+
+<header class="text-center my-5">
+    <h1 class="display-4">Calculate Your BMI</h1>
+    <p class="lead">Enter your details to calculate your Body Mass Index (BMI) and see where you stand.</p>
+</header>
+
+<section class="my-5">
+    <EditForm Model="@bmiModel" OnValidSubmit="CalculateBMI">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="form-group">
+            <label for="age">Age</label>
+            <InputNumber id="age" class="form-control" @bind-Value="bmiModel.Age" />
+        </div>
+
+        <div class="form-group">
+            <label for="gender">Gender</label>
+            <InputSelect id="gender" class="form-control" @bind-Value="bmiModel.Gender">
+                <option value="">Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </InputSelect>
+        </div>
+
+        <div class="form-group">
+            <label for="height">Height (cm)</label>
+            <InputNumber id="height" class="form-control" @bind-Value="bmiModel.Height" />
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Weight (kg)</label>
+            <InputNumber id="weight" class="form-control" @bind-Value="bmiModel.Weight" />
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Calculate BMI</button>
+    </EditForm>
+
+    @if (bmiModel.BMI != null)
+    {
+        <div class="mt-4">
+            <h3>Your BMI is: @bmiModel.BMI.Value.ToString("0.00")</h3>
+            <div class="bmi-category mt-3">
+                <div class="bmi-line">
+                    <span class="bmi-section underweight">Underweight</span>
+                    <span class="bmi-section normal">Normal</span>
+                    <span class="bmi-section overweight">Overweight</span>
+                    <span class="bmi-section obesity">Obesity</span>
+                </div>
+                <div class="bmi-indicator" style="left:@GetBmiPosition(bmiModel.BMI.Value)%"></div>
+            </div>
+        </div>
+    }
+</section>
+
+<footer class="text-center my-5">
+    <p>&copy; 2024 SportClub ProGymHub. All rights reserved.</p>
+</footer>
+
+<style>
+    body {
+        background-color: #edede9;
+    }
+
+    header, section, footer {
+        background-color: #cbf3f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+    }
+
+    .bmi-category {
+        position: relative;
+        height: 30px;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .bmi-line {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .bmi-section {
+        flex: 1;
+        text-align: center;
+        line-height: 30px;
+    }
+
+    .underweight {
+        background-color: #add8e6;
+    }
+
+    .normal {
+        background-color: #90ee90;
+    }
+
+    .overweight {
+        background-color: #ffd700;
+    }
+
+    .obesity {
+        background-color: #ff6347;
+    }
+
+    .bmi-indicator {
+        position: absolute;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: #000;
+    }
+</style>
+
+@code {
+    private BmiModel bmiModel = new BmiModel();
+
+    private void CalculateBMI()
+    {
+        if (bmiModel.Height > 0 && bmiModel.Weight > 0)
+        {
+            var heightInMeters = bmiModel.Height / 100;
+            bmiModel.BMI = bmiModel.Weight / (heightInMeters * heightInMeters);
+        }
+    }
+
+    private double GetBmiPosition(decimal bmi)
+    {
+        // Map BMI to percentage position within the BMI categories
+        if (bmi < 18.5m) return (double)(bmi / 18.5m * 25);
+        if (bmi < 24.9m) return 25 + (double)((bmi - 18.5m) / (24.9m - 18.5m) * 25);
+        if (bmi < 29.9m) return 50 + (double)((bmi - 24.9m) / (29.9m - 24.9m) * 25);
+        if (bmi < 40m) return 75 + (double)((bmi - 29.9m) / (40m - 29.9m) * 25);
+        return 100; // BMI beyond 40 is considered as the maximum
+    }
+
+    public class BmiModel
+    {
+        [Required(ErrorMessage = "Age is required")]
+        [Range(1, 120, ErrorMessage = "Please enter a valid age")]
+        public int Age { get; set; }
+
+        [Required(ErrorMessage = "Gender is required")]
+        public string Gender { get; set; }
+
+        [Required(ErrorMessage = "Height is required")]
+        [Range(1, 300, ErrorMessage = "Please enter a valid height")]
+        public decimal Height { get; set; }
+
+        [Required(ErrorMessage = "Weight is required")]
+        [Range(1, 500, ErrorMessage = "Please enter a valid weight")]
+        public decimal Weight { get; set; }
+
+        public decimal? BMI { get; set; }
+    }
+}
+

@@ -12,7 +12,7 @@
 
     <div class="d-flex justify-content-center mb-3">
         <button class="btn btn-primary me-2" @onclick="LoadAllLessons">All Lessons</button>
-        <button class="btn btn-secondary" @onclick="LoadUserLessons">My Lessons</button>
+        <button class="btn btn-primary" @onclick="LoadUserLessons">My Lessons</button>
     </div>
 
     @if (lessons == null)
@@ -30,10 +30,13 @@
             {
                 <div class="col-md-4 mb-4">
                     <div class="card">
-                        <img src="@GetImageUrl(lesson.ImageUrl)" class="card-img-top" alt="@lesson.Name" />
+                        <img src="@GetImageUrl(lesson.ImageUrl)" class="card-img-top lesson-image" alt="@lesson.Name" />
                         <div class="card-body">
                             <h5 class="card-title">@lesson.Name</h5>
-                            <p class="card-text">@lesson.Description.Substring(0, Math.Min(lesson.Description.Length, 100))...</p>
+                            <p class="card-text">@lesson.Description!.Substring(0, Math.Min(lesson.Description.Length, 20))...</p>
+                            <button class="btn btn-link" @onclick="() => ShowDescriptionModal(lesson.Name!, lesson.Description)">
+                                Read More
+                            </button>
                             <p class="card-text"><small class="text-muted">@lesson.Day.ToString() @lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</small></p>
 
                             @if (userLessonIds.Contains(lesson.Id))
@@ -50,12 +53,36 @@
             }
         </div>
     }
+
+    @if (isDescriptionModalVisible)
+    {
+        <div class="modal show d-block" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">@selectedLessonTitle</h5>
+                        <button type="button" class="btn-close" @onclick="HideDescriptionModal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>@selectedLessonDescription</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" @onclick="HideDescriptionModal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-backdrop show"></div>
+    }
 </div>
 
 @code {
     private List<LessonDTO>? lessons;
     private HashSet<int> userLessonIds = new HashSet<int>();
     private string defaultImageUrl = "/Images/lesssonsPictures/NoPicture.png";
+    private bool isDescriptionModalVisible = false;
+    private string selectedLessonDescription = string.Empty;
+    private string selectedLessonTitle = string.Empty;
 
     protected override async Task OnInitializedAsync()
     {
@@ -201,4 +228,25 @@
             Console.WriteLine($"Error canceling enrollment: {ex.Message}");
         }
     }
+
+    private void ShowDescriptionModal(string title, string description)
+    {
+        selectedLessonTitle = title;
+        selectedLessonDescription = description;
+        isDescriptionModalVisible = true;
+    }
+
+    private void HideDescriptionModal()
+    {
+        isDescriptionModalVisible = false;
+    }
 }
+
+<style>
+    .lesson-image {
+        width: 100%;
+        height: 300px; /* Set a fixed height */
+        object-fit: cover; /* Ensures the image covers the area and maintains aspect ratio */
+    }
+
+</style>

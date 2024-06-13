@@ -1,4 +1,4 @@
-﻿@page "/identity/account/login"
+﻿@page "/identity/account/register"
 @using Client.Pages.OtherPages
 @using Syncfusion.Blazor.Popups
 @layout AuthenticationLayout
@@ -7,11 +7,15 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-4">
-            <EditForm Model="@User" OnValidSubmit="@HandleLogin">
+            <EditForm Model="@User" OnValidSubmit="@HandleRegistration">
                 <DataAnnotationsValidator />
                 <div class="card bg-dark text-white" style="opacity: 0.85; margin-top: 20%; border-radius: 10px;">
-                    <div class="card-header text-center fs-5">Login</div>
+                    <div class="card-header text-center fs-5">Register</div>
                     <div class="card-body">
+                        <div class="form-group">
+                            <label class="form-label">Fullname</label>
+                            <InputText @bind-Value="User.FullName" class="form-control"></InputText>
+                        </div>
                         <div class="form-group mt-3">
                             <label class="form-label">Email</label>
                             <InputText @bind-Value="User.Email" class="form-control"></InputText>
@@ -21,19 +25,23 @@
                             <InputText @bind-Value="User.Password" type="password" class="form-control"></InputText>
                         </div>
                         <div class="form-group mt-3">
+                            <label class="form-label">Confirm password</label>
+                            <InputText @bind-Value="User.ConfirmPassword" type="password" class="form-control"></InputText>
+                        </div>
+                        <div class="form-group mt-3">
                             @if (ShowLoadingButton)
                             {
                                 <ButtonLoadingSpinner></ButtonLoadingSpinner>
                             }
                             else
                             {
-                                <button class="btn btn-primary float-end" type="submit">Login</button>
+                                <button class="btn btn-primary float-end" type="submit">Register</button>
                             }
                         </div>
                     </div>
                     <div class="card-footer text-center">
-                        Don't have an account?
-                        <a class="btn-link" href="/identity/account/register">Sign Up</a>
+                        Have an account already?
+                        <a class="btn-link" href="/identity/account/login">Sign In</a>
                     </div>
                     <ValidationSummary />
                 </div>
@@ -44,31 +52,28 @@
 
 @code {
     public bool ShowLoadingButton { get; set; } = false;
-    Login User = new();
+    Register User = new();
 
     [CascadingParameter] public Task<AuthenticationState>? AuthenticationState { get; set; }
 
     protected async override Task OnInitializedAsync()
     {
-        await CheckUserAuthentication();
+        //await CheckUserAuthentication();
     }
 
-    async Task HandleLogin()
+    async Task HandleRegistration()
     {
         ShowLoadingButton = true;
 
-        var result = await accountSevice.SignInAsync(User);
+        var result = await accountSevice.CreateAsync(User);
         if (result.Flag)
         {
-            await DisplayDialog(result.Message, "Login Success");
-            var customAuthStateProvider = (CustomAuthenticationStateProvider)AuthStateProvider;
-            await customAuthStateProvider.UpdateAuthenticationState(new UserSession()
-                { Token = result.Token, RefreshToken = result.RefreshToken });
-            NavManager.NavigateTo("/", forceLoad: true);
+            await DisplayDialog(result.Message, "Register Success");
+            User = new();
         }
         else
         {
-            await DisplayDialog(result.Message, "Alert");
+            await DisplayDialog(result.Message, "Alert!");
         }
 
         ShowLoadingButton = false;
@@ -79,7 +84,7 @@
         await DialogService.AlertAsync(content, title);
     }
 
-    private async Task CheckUserAuthentication()
+    /*private async Task CheckUserAuthentication()
     {
         if (AuthenticationState != null)
         {
@@ -88,5 +93,5 @@
             if (isUserAuthenticated)
                 NavManager.NavigateTo("/home/dashboard");
         }
-    }
+    }*/
 }

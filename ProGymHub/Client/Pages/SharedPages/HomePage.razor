@@ -1,0 +1,91 @@
+﻿@page "/home/dashboard"
+@using Client.Pages.AdministrationPages
+
+<header class="text-center my-5">
+    <h1 class="display-4">Welcome to SportClub ProGymHub</h1>
+    <p class="lead">Your Ultimate Destination for Fitness and Wellness</p>
+</header>
+
+<section id="about-club" class="my-5">
+    <h2 class="h3">About Our Club</h2>
+    <p>At SportClub ProGymHub, we offer a wide range of lessons to cater to all your fitness needs. Our modern classes are designed to provide the best workout experience, and our team of professional trainers and teachers are here to guide you every step of the way.</p>
+    <ul>
+        <li>Variety of different lessons</li>
+        <li>Modern and well-equipped classes</li>
+        <li>Experienced and certified trainers</li>
+        <li>A welcoming and motivating environment</li>
+    </ul>
+    <div class="image-gallery my-4 d-flex justify-content-center">
+        <img src="Images/WebSitePictures/SiteGymP.jpg" alt="Gym" class="img-fluid rounded shadow-sm mx-2" style="width: 300px; height: 200px;">
+        <img src="Images/WebSitePictures/SiteSwimmingP.jpg" alt="Swimming Pool" class="img-fluid rounded shadow-sm mx-2" style="width: 300px; height: 200px;">
+        <img src="Images/WebSitePictures/SiteYogaP.jpeg" alt="Yoga Class" class="img-fluid rounded shadow-sm mx-2" style="width: 300px; height: 200px;">
+    </div>
+</section>
+
+<section id="benefits" class="my-5">
+    <h2 class="h3">The Benefits of Sports</h2>
+    <p>Engaging in sports is not only fun but also incredibly beneficial for your health. Regular physical activity can help you maintain a healthy weight, reduce your risk of chronic diseases, and improve your mental health.</p>
+    <ul>
+        <li>Improves cardiovascular health</li>
+        <li>Strengthens muscles and bones</li>
+        <li>Enhances mental well-being</li>
+        <li>Boosts immune system</li>
+    </ul>
+</section>
+
+<section id="bmi-calculator" class="my-5 text-center">
+    <h2 class="h3">Calculate Your BMI</h2>
+    <p>Track your fitness progress by calculating your Body Mass Index (BMI). Click the link below to get started:</p>
+    <a href="/bmi" class="btn btn-primary">BMI Calculator</a>
+</section>
+
+<footer class="text-center my-5">
+    <p>&copy; 2024 SportClub ProGymHub. All rights reserved.</p>
+</footer>
+
+<style>
+    body {
+        background-color: #edede9; /* Light grey background color */
+    }
+
+    header, section, footer {
+        background-color: #cbf3f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+    }
+
+    .image-gallery {
+        display: flex;
+        justify-content: center;
+    }
+
+        .image-gallery img {
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+            object-fit: cover; /* Ensures the image covers the specified dimensions without distortion */
+        }
+</style>
+
+@code {
+    [CascadingParameter] public Task<AuthenticationState>? AuthenticationState { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        //await CheckUserAuthentication();
+    }
+
+    /*private async Task CheckUserAuthentication()
+        {
+        var user = (await AuthenticationState).User;
+        bool isUserAuthenticated = user.Identity?.IsAuthenticated ?? false;
+        if (!isUserAuthenticated)
+            NavManager.NavigateTo("/identity/account/login");
+    }*/
+}

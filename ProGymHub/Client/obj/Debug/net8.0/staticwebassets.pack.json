@@ -13,12 +13,84 @@
       "PackagePath": "staticwebassets\\Client.styles.css"
     },
     {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\WebSitePictures\\SiteGymP.jpg",
+      "PackagePath": "staticwebassets\\Images\\WebSitePictures\\SiteGymP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\WebSitePictures\\SiteSwimmingP.jpg",
+      "PackagePath": "staticwebassets\\Images\\WebSitePictures\\SiteSwimmingP.jpg"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\WebSitePictures\\SiteYogaP.jpeg",
+      "PackagePath": "staticwebassets\\Images\\WebSitePictures\\SiteYogaP.jpeg"
+    },
+    {
       "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\background\\BackgroundI.png",
       "PackagePath": "staticwebassets\\Images\\background\\BackgroundI.png"
     },
     {
       "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\NoPicture.png",
       "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\NoPicture.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\badminton.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\badminton.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\dancep.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\dancep.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\football.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\football.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\kboxing.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\kboxing.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\pilatesp.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\pilatesp.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\runnig.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\runnig.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\swimp.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\swimp.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\tennis.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\tennis.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\lesssonsPictures\\yogap.png",
+      "PackagePath": "staticwebassets\\Images\\lesssonsPictures\\yogap.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\Emily.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\Emily.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\Jane.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\Jane.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\John.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\John.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\Michael.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\Michael.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\William.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\William.png"
+    },
+    {
+      "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\adminAlex.png",
+      "PackagePath": "staticwebassets\\Images\\userPictures\\adminAlex.png"
     },
     {
       "Id": "C:\\Users\\artem\\Documents\\MyProjects!!! Biba\\Gym App C# Blazor WebAssembly project\\ProGymHub_Project\\ProGymHub\\Client\\wwwroot\\Images\\userPictures\\noPicture.png",

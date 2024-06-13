@@ -7,13 +7,15 @@
 
     protected async override Task OnInitializedAsync()
     {
-        if (AuthenticationState != null)
+        /*if (AuthenticationState != null)
         {
             var user = (await AuthenticationState).User;
             if (user.Identity?.IsAuthenticated ?? false)
                 NavManager.NavigateTo("/home/dashboard");
             else
                 NavManager.NavigateTo("/identity/account/login");
-        }
+        }*/
+
+        NavManager.NavigateTo("/home/dashboard");
     }
 }

@@ -7,47 +7,42 @@
 @inject NavigationManager Navigation
 @inject AuthenticationStateProvider AuthenticationStateProvider
 
-<link href="css/Schedule.css" rel="stylesheet" />
-
-<div class="container">
-    <h3 class="text-center my-4">Weekly Schedule</h3>
-
-    @if (lessons == null)
-    {
-        <p><em>Loading...</em></p>
-    }
-    else if (!lessons.Any())
-    {
-        <p>No lessons available.</p>
-    }
-    else
-    {
-        <div class="schedule-container">
-            <div class="hour-labels">
-                @for (var hour = 8; hour <= 20; hour++)
-                {
-                    var displayHour = hour <= 12 ? hour : hour - 12;
-                    var period = hour < 12 ? "AM" : "PM";
-                    <div class="hour-label">@displayHour:00 @period</div>
-                }
-            </div>
-            <div class="schedule-grid">
-                @foreach (var day in Enum.GetValues(typeof(DayOfWeek)).Cast<DayOfWeek>())
-                {
-                    <div class="day-column">
-                        <h5 class="text-center">@day</h5>
-                        @foreach (var lesson in lessons.Where(l => l.Day == day))
-                        {
-                            <div class="lesson-box" style="@GetLessonStyle(lesson)">
-                                @lesson.Name
-                                <div class="lesson-times">@lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</div>
-                            </div>
-                        }
-                    </div>
-                }
-            </div>
-        </div>
-    }
+<div class="schedule">
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int hour = 8; hour <= 20; hour++)
+            {
+                <tr>
+                    <td>@($"{hour:00}:00")</td>
+                    @for (int day = 0; day < 7; day++)
+                    {
+                        var lesson = lessons?.FirstOrDefault(l => (int)l.Day == day && l.StartTime.Hours == hour);
+                        <td>
+                            @if (lesson != null)
+                            {
+                                <div class="lesson">
+                                    <strong>@lesson.Name</strong>
+                                    <div>@lesson.StartTime.ToString(@"hh\:mm") - @lesson.EndTime.ToString(@"hh\:mm")</div>
+                                </div>
+                            }
+                        </td>
+                    }
+                </tr>
+            }
+        </tbody>
+    </table>
 </div>
 
 @code {
@@ -70,94 +65,53 @@
             Console.WriteLine($"Error fetching all lessons: {ex.Message}");
         }
     }
-
-    private string GetLessonStyle(LessonDTO lesson)
-    {
-        var startHour = lesson.StartTime.Hours;
-        var endHour = lesson.EndTime.Hours;
-        var startMinute = lesson.StartTime.Minutes;
-        var endMinute = lesson.EndTime.Minutes;
-
-        var startInMinutes = (startHour - 8) * 60 + startMinute;
-        var endInMinutes = (endHour - 8) * 60 + endMinute;
-
-        var top = startInMinutes / 720.0 * 100; // 720 = 12 hours * 60 minutes
-        var height = (endInMinutes - startInMinutes) / 720.0 * 100;
-
-        return $"top: {top}%; height: {height}%;";
-    }
 }
 
 <style>
-    .schedule-container {
-        display: flex;
-        position: relative;
-        height: 960px; /* 12 hours x 60 minutes + padding */
+    .schedule {
+        width: 100%;
+        overflow-x: auto;
+        background-color: #bde0fe;
     }
 
-    .hour-labels {
-        width: 60px;
-        padding-top: 20px; /* Add padding to align the top hour */
-        border-right: 1px solid #ddd;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .hour-label {
-        height: 70px; /* 60px + padding */
-        border-bottom: 1px solid #ddd;
-        text-align: right;
-        padding-right: 5px;
-        box-sizing: border-box;
-    }
-
-    .schedule-grid {
-        display: flex;
-        justify-content: space-between;
-        border: 1px solid #ddd;
-        height: 100%; /* Match the height of the container */
-        flex-grow: 1;
-        margin-left: 60px; /* Same width as hour labels */
-    }
-
-    .day-column {
-        flex: 1;
-        border-left: 1px solid #ddd;
-        position: relative;
-    }
-
-        .day-column:first-child {
-            border-left: none;
+        .schedule table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed; /* Ensures columns are of equal width */
         }
 
-        .day-column h5 {
-            margin: 0;
-            padding: 10px;
-            background-color: #f8f9fa;
-            border-bottom: 1px solid #ddd;
+        .schedule th, .schedule td {
+            border: 1px solid #000;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1;
+            vertical-align: middle;
+            padding: 5px;
+            height: 60px; /* Ensures rows are of equal height */
         }
 
-    .lesson-box {
-        position: absolute;
-        left: 10%;
-        right: 10%;
-        background-color: #ffc107;
-        color: #fff;
-        padding: 5px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        text-align: center;
-    }
+        .schedule th {
+            background-color: #7209b7;
+            color: #ffffff;
+        }
 
-    .lesson-times {
-        font-size: 0.8em;
-        margin-top: 5px;
-    }
+        .schedule td {
+            height: 60px;
+            position: relative;
+            width: 14.285%; /* Ensures each day column is the same width */
+        }
+
+        .schedule .lesson-box {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .schedule .lesson {
+            background-color: #e4c1f9;
+            border: 1px solid #000;
+            padding: 5px;
+            margin: 2px;
+        }
+
 </style>
 
