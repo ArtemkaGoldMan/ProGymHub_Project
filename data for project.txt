@@ -1,0 +1,109 @@
+USERS:
+
+1.	Admin
+	a.	Full Name: Admin Alex
+	b.	Email: admin@gc.com
+	c.	Password: admin
+2.	User 1:
+	a.	Full Name: John Doe
+	b.	Email: johndoe@gc.com
+	c.	Password: 12345
+3.	User 2:
+	a.	Full Name: Jane Smith
+	b.	Email: janesmith@gc.com
+	c.	Password: 12345
+4.	User 3:
+	a.	Full Name: Michael Johnson
+	b.	Email: michaeljohnson@gc.com
+	c.	Password: 12345
+5.	User 4:
+	a.	Full Name: Emily Davis
+	b.	Email: emilydavis@gc.com
+	c.	Password: 12345
+6.	User 5:
+	a.	Full Name: William Brown
+	b.	Email: williambrown@gc.com
+	c.	Password: 12345
+
+SQL for lessons:
+
+INSERT INTO Lessons (Name, Description, ImageUrl, Day, StartTime, EndTime)
+VALUES
+('Yoga', 'A calming practice focusing on breath control, meditation, and poses.', '/Images/lesssonsPictures/yogap.png', 1, '08:00', '09:00'),
+('Football', 'A team sport played between two teams of eleven players with a spherical ball.', '/Images/lesssonsPictures/football.png', 2, '10:00', '12:00'),
+('Volleyball', 'A team sport in which two teams of six players are separated by a net.', '', 3, '11:00', '13:00'),
+('Pilates', 'A system of exercises designed to improve physical strength, flexibility, and posture.', '/Images/lesssonsPictures/pilatesp.png', 4, '09:00', '10:00'),
+('Basketball', 'A team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop.', '', 5, '14:00', '16:00'),
+('Swimming', 'An individual or team racing sport that requires the use of one''s entire body to move through water.', '/Images/lesssonsPictures/swimp.png', 6, '07:00', '09:00'),
+('Dance', 'Movement of the body in a rhythmic way, usually to music and within a given space.', '/Images/lesssonsPictures/dancep.png', 1, '17:00', '18:00'),
+('Kickboxing', 'A group of stand-up combat sports based on kicking and punching.', '/Images/lesssonsPictures/kboxing.png', 2, '18:00', '19:00'),
+('Martial Arts', 'Various sports or skills, mainly of East Asian origin, that involve combat and self-defense.', '', 3, '19:00', '20:00'),
+('Zumba', 'A fitness program that involves cardio and Latin-inspired dance.', '', 4, '08:00', '09:00'),
+('Tennis', 'A sport where players use a racket to hit a ball over a net into the opponent''s court.', '/Images/lesssonsPictures/tennis.png', 5, '09:00', '11:00'),
+('Badminton', 'A racquet sport played using racquets to hit a shuttlecock across a net.', '/Images/lesssonsPictures/badminton.png', 6, '10:00', '12:00'),
+('Cycling', 'The use of bicycles for transport, recreation, exercise, or sport.', '', 1, '07:00', '08:00'),
+('Running', 'A method of terrestrial locomotion allowing humans and other animals to move rapidly on foot.', '/Images/lesssonsPictures/runnig.png', 2, '06:00', '07:00'),
+('Gymnastics', 'A sport involving performance of exercises requiring physical strength, flexibility, balance, and coordination.', '', 3, '12:00', '14:00');
+
+
+
+
+
+select * from Lessons
+select * from UserLessons
+
+select * from ApplicationUsers
+
+select * from SystemRoles
+select * from UserRol
+
+
+-- Enroll users into lessons
+INSERT INTO UserLessons (UserId, LessonId)
+VALUES
+(2, 1), -- John Doe enrolled in Yoga
+(2, 2), -- John Doe enrolled in Football
+(3, 3), -- Jane Smith enrolled in Volleyball
+(3, 4), -- Jane Smith enrolled in Pilates
+(4, 5), -- Michael Johnson enrolled in Basketball
+(4, 6), -- Michael Johnson enrolled in Swimming
+(6, 7), -- Emily Davis enrolled in Dance
+(6, 8), -- Emily Davis enrolled in Kickboxing
+(7, 9), -- William Brown enrolled in Martial Arts
+(7, 10), -- William Brown enrolled in Zumba
+(2, 11), -- John Doe enrolled in Tennis
+(3, 12), -- Jane Smith enrolled in Badminton
+(4, 13), -- Michael Johnson enrolled in Cycling
+(6, 14), -- Emily Davis enrolled in Running
+(7, 15); -- William Brown enrolled in Gymnastics
+
+-- Update PhotoUrl for Admin Alex
+UPDATE ApplicationUsers
+SET PhotoUrl = '/Images/userPictures/adminAlex.png'
+WHERE Id = 1;
+
+-- Update PhotoUrl for John Doe
+UPDATE ApplicationUsers
+SET PhotoUrl = '/Images/userPictures/John.png'
+WHERE Id = 2;
+
+-- Update PhotoUrl for Jane Smith
+UPDATE ApplicationUsers
+SET PhotoUrl = '/Images/userPictures/Jane.png'
+WHERE Id = 3;
+
+-- Update PhotoUrl for Michael Johnson
+UPDATE ApplicationUsers
+SET PhotoUrl = '/Images/userPictures/Michael.png'
+WHERE Id = 4;
+
+-- Update PhotoUrl for Emily Davis
+UPDATE ApplicationUsers
+SET PhotoUrl = '/Images/userPictures/Emily.png'
+WHERE Id = 6;
+
+-- Update PhotoUrl for William Brown
+UPDATE ApplicationUsers
+SET PhotoUrl = '/Images/userPictures/William.png'
+WHERE Id = 7;
+
