@@ -1,7 +1,3 @@
-Sure, here's the updated README.md with a Table of Contents included:
-
----
-
 # ProGymHub Project
 
 ## Description
@@ -85,6 +81,3 @@ Sure, here's the updated README.md with a Table of Contents included:
 - **Database:** SQL Server
 - **Version Control:** Git, GitHub
 
----
-
-This structure should make your README.md clear and easy to navigate for anyone who visits your project.
