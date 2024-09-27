@@ -1,5 +1,15 @@
 # ProGymHub Project
 
+## Table of Contents
+1. [Description](#description)
+2. [YouTube](#video-demo)
+3. [Project Goals](#project-goals)
+4. [Features](#features)
+   - [User Profile Management](#user-profile-management)
+   - [Admin Management](#admin-management)
+   - [Lesson Management](#lesson-management)
+5. [Technologies Used](#technologies-used)
+
 ## Description
 
 **ProGymHub** is a dynamic web application designed to revolutionize the management of fitness club memberships. Whether you're a club member or an administrator, ProGymHub offers a seamless and intuitive experience tailored to your needs.
@@ -15,14 +25,9 @@
 
 **ProGymHub** aims to simplify the fitness club experience, making it more accessible and enjoyable for everyone. By streamlining administrative tasks and enhancing member engagement, ProGymHub ensures that both members and admins can focus on what truly matters - achieving fitness goals and providing exceptional service.
 
-## Table of Contents
-1. [Description](#description)
-2. [Project Goals](#project-goals)
-3. [Features](#features)
-   - [User Profile Management](#user-profile-management)
-   - [Admin Management](#admin-management)
-   - [Lesson Management](#lesson-management)
-4. [Technologies Used](#technologies-used)
+## Video Demo
+
+Watch the demo on [YouTube](https://www.youtube.com/watch?v=4LPz8JNVdpI&ab_channel=ArtemOmelchenko).
 
 ## Project Goals
 
